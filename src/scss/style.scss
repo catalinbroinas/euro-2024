@@ -121,6 +121,17 @@
    }
 }
 
+.intro-body {
+   .text-container {
+      @include background-light;
+   }
+   .text {
+      font-size: 1.25rem;
+      line-height: 2rem;
+      font-family: "Roboto", Arial, Helvetica, sans-serif;
+   }
+}
+
 // Style
 .mask-dark
 {

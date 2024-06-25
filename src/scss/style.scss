@@ -26,8 +26,16 @@
       padding: 0.75rem 0;
    }
    .navbar-brand {
+      position: relative;
       padding: 0 0 0.75rem;
       margin: 0;
+   }
+   .navbar-brand::after {
+      @include nav-item-border;
+   }
+   .navbar-brand:hover::after {
+      width: 100%;
+      left: 0;
    }
    .navbar-title {
       padding: 0;
@@ -41,6 +49,7 @@
       padding: 0;
    }
    .nav-item {
+      position: relative;
       margin: 0;
       padding: 0;
    }
@@ -51,6 +60,14 @@
       line-height: 3rem;
       @include text;
    }
+   .nav-link::after {
+      @include nav-item-border;
+   }
+   .nav-link:hover::after {
+      width: 100%;
+      left: 0;
+   }
+
    @media screen and (max-width: 991px) {
       padding: 1.5rem 2rem;
       .navbar-toggler {
@@ -63,7 +80,7 @@
       }
       .navbar-brand:hover {
          background-color: $primary-2;
-         color: white;
+         color: $secondary-2;
       }
       .navbar-nav {
          margin-bottom: 1.5rem;
@@ -80,7 +97,7 @@
       }
       .nav-link:hover {
          background-color: $primary-2;
-         color: white;
+         color: $secondary-2;
       }
    }
 }

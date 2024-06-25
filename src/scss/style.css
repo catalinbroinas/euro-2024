@@ -16273,19 +16273,93 @@ fieldset:disabled .btn-group-vertical > .btn {
 
 .title {
   font-family: Arial, "Roboto", Verdana, sans-serif;
-  font-weight: 700;
+  font-weight: 900;
   color: #332D2D;
   text-align: center;
 }
 
 .sub-title {
   font-family: Arial, "Roboto", Verdana, sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   color: #332D2D;
 }
 
 .text {
   font-family: "Roboto", Arial, Verdana, sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   color: #332D2D;
+}
+
+.navbar {
+  background-color: #FBFBFB;
+  margin: 0;
+  padding: 0.75rem 2rem 0;
+}
+.navbar .navbar-toggler {
+  margin: 0;
+  padding: 0.75rem 0;
+}
+.navbar .navbar-brand {
+  padding: 0 0 0.75rem;
+  margin: 0;
+}
+.navbar .navbar-title {
+  padding: 0;
+  margin: 0;
+  line-height: 3rem;
+  font-size: 2rem;
+  font-family: Arial, "Roboto", Verdana, sans-serif;
+  font-weight: 700;
+  color: #332D2D;
+}
+.navbar .navbar-nav {
+  margin: 0;
+  padding: 0;
+}
+.navbar .nav-item {
+  margin: 0;
+  padding: 0;
+}
+.navbar .nav-link {
+  margin: 0 2rem;
+  padding: 0 0 0.75rem;
+  font-size: 1.25rem;
+  line-height: 3rem;
+  font-family: "Roboto", Arial, Verdana, sans-serif;
+  font-weight: 500;
+  color: #332D2D;
+}
+@media screen and (max-width: 991px) {
+  .navbar {
+    padding: 1.5rem 2rem;
+  }
+  .navbar .navbar-toggler {
+    padding: 0;
+  }
+  .navbar .navbar-brand {
+    margin-top: 1.5rem;
+    padding: 0.75rem 0;
+    transition: all 0.5s 0.3s;
+  }
+  .navbar .navbar-brand:hover {
+    background-color: #2962FF;
+    color: white;
+  }
+  .navbar .navbar-nav {
+    margin-bottom: 1.5rem;
+  }
+  .navbar .navbar-title {
+    color: inherit;
+    margin: auto;
+  }
+  .navbar .nav-link {
+    margin: 0;
+    padding: 0.75rem 0;
+    transition: all 0.5s 0.3s;
+    text-align: center;
+  }
+  .navbar .nav-link:hover {
+    background-color: #2962FF;
+    color: white;
+  }
 }/*# sourceMappingURL=style.css.map */

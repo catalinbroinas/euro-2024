@@ -5,16 +5,82 @@
 @import 'mdb.free';
 
 // Typography
-.title
-{
+.title {
    @include title;
    text-align: center;
 }
-.sub-title
-{
+.sub-title {
    @include sub-title;
 }
-.text
-{
+.text {
    @include text;
+}
+
+// Navbar
+.navbar {
+   background-color: $primary-1;
+   margin: 0;
+   padding: 0.75rem 2rem 0;
+   .navbar-toggler {
+      margin: 0;
+      padding: 0.75rem 0;
+   }
+   .navbar-brand {
+      padding: 0 0 0.75rem;
+      margin: 0;
+   }
+   .navbar-title {
+      padding: 0;
+      margin: 0;
+      line-height: 3rem;
+      font-size: 2rem;
+      @include sub-title;
+   }
+   .navbar-nav {
+      margin: 0;
+      padding: 0;
+   }
+   .nav-item {
+      margin: 0;
+      padding: 0;
+   }
+   .nav-link {
+      margin: 0 2rem;
+      padding: 0 0 0.75rem;
+      font-size: 1.25rem;
+      line-height: 3rem;
+      @include text;
+   }
+   @media screen and (max-width: 991px) {
+      padding: 1.5rem 2rem;
+      .navbar-toggler {
+         padding: 0;
+      }
+      .navbar-brand {
+         margin-top: 1.5rem;
+         padding: 0.75rem 0;
+         transition: all 0.5s 0.3s;
+      }
+      .navbar-brand:hover {
+         background-color: $primary-2;
+         color: white;
+      }
+      .navbar-nav {
+         margin-bottom: 1.5rem;
+      }
+      .navbar-title {
+         color: inherit;
+         margin: auto;
+      }
+      .nav-link {
+         margin: 0;
+         padding: 0.75rem 0;
+         transition: all 0.5s 0.3s;
+         text-align: center;
+      }
+      .nav-link:hover {
+         background-color: $primary-2;
+         color: white;
+      }
+   }
 }

@@ -1,0 +1,20 @@
+@import 'variables';
+@import 'mixins';
+@import 'custom-bootstrap';
+@import 'utilities-api.scss';
+@import 'mdb.free';
+
+// Typography
+.title
+{
+   @include title;
+   text-align: center;
+}
+.sub-title
+{
+   @include sub-title;
+}
+.text
+{
+   @include text;
+}

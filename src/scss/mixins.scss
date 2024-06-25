@@ -1,0 +1,26 @@
+// Theme Color
+@mixin background-light
+{
+    background-color: $primary-1;
+    color: $secondary-1;
+}
+
+// Text
+@mixin title
+{
+    font-family: $font-title;
+    font-weight: 800;
+    color: $secondary-1;
+}
+@mixin sub-title
+{
+    font-family: $font-title;
+    font-weight: bolder;
+    color: $secondary-1;
+}
+@mixin text
+{
+    font-family: $font-text;
+    font-weight: normal;
+    color: $secondary-1;
+}

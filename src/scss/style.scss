@@ -101,3 +101,28 @@
       }
    }
 }
+
+// Section
+.intro {
+   display: flex;
+   height: 40vh;
+   background-position: center;
+   z-index: 2;
+   .title {
+      color: $primary-2;
+      font-size: 3rem;
+   }
+   .badge-intro {
+      background-color: rgba(255, 255, 255, 0.7);
+   }
+   .icon-intro {
+      font-size: 4rem;
+      color: $primary-2;
+   }
+}
+
+// Style
+.mask-dark
+{
+   background-color: rgba(0, 0, 0, 0.25);
+}

@@ -9,18 +9,18 @@
 @mixin title
 {
     font-family: $font-title;
-    font-weight: 800;
+    font-weight: 700;
     color: $secondary-1;
 }
 @mixin sub-title
 {
     font-family: $font-title;
-    font-weight: bolder;
+    font-weight: 500;
     color: $secondary-1;
 }
 @mixin text
 {
     font-family: $font-text;
-    font-weight: normal;
+    font-weight: 400;
     color: $secondary-1;
 }

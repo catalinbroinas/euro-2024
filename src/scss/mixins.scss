@@ -4,6 +4,10 @@
     background-color: $primary-1;
     color: $secondary-1;
 }
+@mixin background-blue {
+    background-color: $primary-2;
+    color: $secondary-2;
+}
 
 // Text
 @mixin title

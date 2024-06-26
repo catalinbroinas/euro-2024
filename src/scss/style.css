@@ -16428,4 +16428,13 @@ fieldset:disabled .btn-group-vertical > .btn {
 
 .mask-dark {
   background-color: rgba(0, 0, 0, 0.25);
+}
+
+.jumbotron-blue {
+  background-color: #2962FF;
+  color: white;
+}
+.jumbotron-blue .title {
+  color: inherit;
+  font-size: 3rem;
 }/*# sourceMappingURL=style.css.map */

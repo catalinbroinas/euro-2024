@@ -136,6 +136,27 @@
    }
 }
 
+.intro-teams {
+   height: 30vh;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   position: relative;
+   z-index: 2;
+   .title, .sub-title {
+      color: $secondary-2;
+      text-align: center;
+   }
+   .title {
+      font-size: 3rem;
+      text-transform: capitalize;
+   }
+   .sub-title {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+   }
+}
+
 // Card
 .card-team {
    .card-image {
@@ -161,12 +182,4 @@
 .mask-dark
 {
    background-color: rgba(0, 0, 0, 0.25);
-}
-
-.jumbotron-blue {
-   @include background-blue;
-   .title {
-      color: inherit;
-      font-size: 3rem;
-   }
 }

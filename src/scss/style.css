@@ -16291,7 +16291,7 @@ fieldset:disabled .btn-group-vertical > .btn {
 }
 
 .navbar {
-  background-color: #FBFBFB;
+  background-color: #F5F5F5;
   margin: 0;
   padding: 0.75rem 2rem 0;
 }
@@ -16414,7 +16414,7 @@ fieldset:disabled .btn-group-vertical > .btn {
 }
 
 .intro-body .text-container {
-  background-color: #FBFBFB;
+  background-color: #F5F5F5;
   color: #332D2D;
 }
 .intro-body .title {
@@ -16424,6 +16424,27 @@ fieldset:disabled .btn-group-vertical > .btn {
   font-size: 1.25rem;
   line-height: 2rem;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.intro-teams {
+  height: 30vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: 2;
+}
+.intro-teams .title, .intro-teams .sub-title {
+  color: white;
+  text-align: center;
+}
+.intro-teams .title {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+.intro-teams .sub-title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
 }
 
 .card-team .card-image {
@@ -16446,13 +16467,4 @@ fieldset:disabled .btn-group-vertical > .btn {
 
 .mask-dark {
   background-color: rgba(0, 0, 0, 0.25);
-}
-
-.jumbotron-blue {
-  background-color: #2962FF;
-  color: white;
-}
-.jumbotron-blue .title {
-  color: inherit;
-  font-size: 3rem;
 }/*# sourceMappingURL=style.css.map */

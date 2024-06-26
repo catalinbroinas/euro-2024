@@ -136,11 +136,33 @@
    }
 }
 
+// Card
+.card-team {
+   .card-image {
+      position: relative;
+      z-index: 0;
+   }
+   .card-mask {
+      background-color: rgba(251, 251, 251, 0.15);
+   }
+   .card-header {
+      position: relative;
+      z-index: 1; 
+      margin-top: -10%; 
+      border: none;
+      text-align: center;
+   }
+   .card-body {
+      border: none;
+   }
+}
+
 // Style
 .mask-dark
 {
    background-color: rgba(0, 0, 0, 0.25);
 }
+
 .jumbotron-blue {
    @include background-blue;
    .title {

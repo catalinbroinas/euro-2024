@@ -16403,6 +16403,7 @@ fieldset:disabled .btn-group-vertical > .btn {
 .intro .title {
   color: #2962FF;
   font-size: 3rem;
+  text-transform: uppercase;
 }
 .intro .badge-intro {
   background-color: rgba(255, 255, 255, 0.7);
@@ -16415,6 +16416,9 @@ fieldset:disabled .btn-group-vertical > .btn {
 .intro-body .text-container {
   background-color: #FBFBFB;
   color: #332D2D;
+}
+.intro-body .title {
+  text-transform: capitalize;
 }
 .intro-body .text {
   font-size: 1.25rem;

@@ -111,6 +111,7 @@
    .title {
       color: $primary-2;
       font-size: 3rem;
+      text-transform: uppercase;
    }
    .badge-intro {
       background-color: rgba(255, 255, 255, 0.7);
@@ -124,6 +125,9 @@
 .intro-body {
    .text-container {
       @include background-light;
+   }
+   .title {
+      text-transform: capitalize;
    }
    .text {
       font-size: 1.25rem;

@@ -1,6 +1,13 @@
-function testModule() {
-    const message = 'Module exported successfully!';
-    return message;
+function teamsDOM() {
+    const createCard = ({ imageSrc, flagName, teamName }) => {
+
+    }
+
+    const displayCards = (teams) => {
+
+    }
+
+    return { displayCards };
 }
 
-export { testModule };
+export { teamsDOM };

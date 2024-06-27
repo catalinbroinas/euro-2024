@@ -1,3 +1,1 @@
-import { testModule } from "./module/teams.js";
-
-console.log(testModule());
+import { teamsDOM } from "./module/teams.js";

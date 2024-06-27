@@ -56,8 +56,23 @@ function teamsDOM() {
     };
 
     const displayCards = (teams) => {
+        const container = document.querySelector('#teams-content');
 
-    }
+        teams.forEach(team => {
+            const cardWrapper = document.createElement('div');
+            cardWrapper.classList.add('col');
+
+            const card = createCard({
+                imageSrc: team.imageSrc,
+                stadiumName: team.stadiumName,
+                flagName: team.flagName,
+                teamName: team.teamName
+            });
+
+            cardWrapper.appendChild(card);
+            container.appendChild(cardWrapper);
+        })
+    };
 
     return { displayCards };
 }

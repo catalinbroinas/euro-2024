@@ -1,7 +1,7 @@
 async function teamManager() {
     const getTeams = async () => {
         try {
-            const response = await fetch('../../json/teams.json');
+            const response = await fetch('/src/json/teams.json', { mode: 'cors' });
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }

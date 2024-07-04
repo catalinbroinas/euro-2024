@@ -1,3 +1,20 @@
+async function teamManager() {
+    const getTeams = async () => {
+        try {
+            const response = await fetch('../../json/teams.json');
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            const teams = await response.json();
+            return teams;
+        } catch (err) {
+            console.error('There has been a problem with your fetch operation:', err)
+        }
+    };
+
+    return { getTeams };
+}
+
 function teamsDOM() {
     const createCard = ({
         imageSrc,
@@ -77,4 +94,4 @@ function teamsDOM() {
     return { displayCards };
 }
 
-export { teamsDOM };
+export { teamsDOM, teamManager };

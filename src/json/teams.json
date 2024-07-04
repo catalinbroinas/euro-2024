@@ -1,0 +1,14 @@
+[
+  {
+    "imageSrc": "allianzArena2.jpg",
+    "stadiumName": "Allianz Arena",
+    "flagName": "germany",
+    "teamName": "Germany"
+  },
+  {
+    "imageSrc": "wembley.jpg",
+    "stadiumName": "Wembley Stadium",
+    "flagName": "england",
+    "teamName": "England"
+  }
+]

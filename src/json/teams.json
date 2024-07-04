@@ -10,5 +10,137 @@
     "stadiumName": "Wembley Stadium",
     "flagName": "england",
     "teamName": "England"
+  },
+  {
+    "imageSrc": "bernabeu.jpg",
+    "stadiumName": "Santiago Bernabéu",
+    "flagName": "spain",
+    "teamName": "Spain"
+  },
+  {
+    "imageSrc": "parcDesPrinces.jpg",
+    "stadiumName": "Parc des Princes",
+    "flagName": "france",
+    "teamName": "France"
+  },
+  {
+    "imageSrc": "benfica.jpg",
+    "stadiumName": "Estádio do Benfica",
+    "flagName": "portugal",
+    "teamName": "Portugal"
+  },
+  {
+    "imageSrc": "sanSiro.jpg",
+    "stadiumName": "San Siro",
+    "flagName": "italy",
+    "teamName": "Italy"
+  },
+  {
+    "imageSrc": "ajax.jpg",
+    "stadiumName": "Amsterdam Arena",
+    "flagName": "netherlands",
+    "teamName": "Netherlands"
+  },
+  {
+    "imageSrc": "kingB.jpg",
+    "stadiumName": "King Baudouin Stadium",
+    "flagName": "belgium",
+    "teamName": "Belgium"
+  },
+  {
+    "imageSrc": "galata.jpg",
+    "stadiumName": "Atatürk Olimpiyat Stadı",
+    "flagName": "turkey",
+    "teamName": "Turkey"
+  },
+  {
+    "imageSrc": "bern.jpg",
+    "stadiumName": " Wankdorf Bern",
+    "flagName": "switzerland",
+    "teamName": "Switzerland"
+  },
+  {
+    "imageSrc": "nationalArena.jpg",
+    "stadiumName": "Arena Națională",
+    "flagName": "romania",
+    "teamName": "Romania"
+  },
+  {
+    "imageSrc": "celticPark.jpg",
+    "stadiumName": "Celtic Park",
+    "flagName": "scotland",
+    "teamName": "Scotland"
+  },
+  {
+    "imageSrc": "hungary.jpg",
+    "stadiumName": "Puskás Aréna",
+    "flagName": "hungary",
+    "teamName": "Hungary"
+  },
+  {
+    "imageSrc": "ukraine.jpg",
+    "stadiumName": "NSC Olympic",
+    "flagName": "ukraine",
+    "teamName": "Ukraine"
+  },
+  {
+    "imageSrc": "oldStadium.jpg",
+    "stadiumName": "Maksimir Stadium",
+    "flagName": "croatia",
+    "teamName": "Croatia"
+  },
+  {
+    "imageSrc": "stadium.jpg",
+    "stadiumName": "Arena Kombëtare",
+    "flagName": "albania",
+    "teamName": "Albania"
+  },
+  {
+    "imageSrc": "stadiumSquare.jpg",
+    "stadiumName": "Telia Parken",
+    "flagName": "denmark",
+    "teamName": "Denmark"
+  },
+  {
+    "imageSrc": "stadium.jpg",
+    "stadiumName": "Ernst-Happel-Stadion",
+    "flagName": "austria",
+    "teamName": "Austria"
+  },
+  {
+    "imageSrc": "stadium.jpg",
+    "stadiumName": "Olimpic Stadium",
+    "flagName": "poland",
+    "teamName": "Poland"
+  },
+  {
+    "imageSrc": "oldStadium.jpg",
+    "stadiumName": "Old Stadium",
+    "flagName": "serbia",
+    "teamName": "Serbia"
+  },
+  {
+    "imageSrc": "stadium.jpg",
+    "stadiumName": "Olimpic Stadium",
+    "flagName": "slovenia",
+    "teamName": "Slovenia"
+  },
+  {
+    "imageSrc": "stadium.jpg",
+    "stadiumName": "Olimpic Stadium",
+    "flagName": "slovakia",
+    "teamName": "Slovakia"
+  },
+  {
+    "imageSrc": "stadium.jpg",
+    "stadiumName": "Eden Arena",
+    "flagName": "czech-republic",
+    "teamName": "Czech Republic"
+  },
+  {
+    "imageSrc": "oldStadium.jpg",
+    "stadiumName": "Mikheil Meskhi Stadium",
+    "flagName": "georgia",
+    "teamName": "Georgia"
   }
 ]

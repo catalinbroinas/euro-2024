@@ -1,4 +1,4 @@
-function domHandler() {
+function UtilityDomHandler() {
     const clearPageContent = (container) => {
         if (container.hasChildNodes()) {
             while (container.firstChild) {
@@ -12,4 +12,4 @@ function domHandler() {
     };
 }
 
-export { domHandler };
+export { UtilityDomHandler };

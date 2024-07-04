@@ -1,4 +1,4 @@
-async function teamManager() {
+async function TeamDataFetcher() {
     const getTeams = async () => {
         try {
             const response = await fetch('/src/json/teams.json', { mode: 'cors' });
@@ -15,7 +15,7 @@ async function teamManager() {
     return { getTeams };
 }
 
-function teamsDOM() {
+function TeamDomHandler() {
     const createCard = ({
         imageSrc,
         stadiumName,
@@ -72,9 +72,7 @@ function teamsDOM() {
         return card;
     };
 
-    const displayCards = (teams) => {
-        const container = document.querySelector('#teams-content');
-
+    const displayCards = (teams, container) => {
         teams.forEach(team => {
             const cardWrapper = document.createElement('div');
             cardWrapper.classList.add('col');
@@ -94,4 +92,4 @@ function teamsDOM() {
     return { displayCards };
 }
 
-export { teamsDOM, teamManager };
+export { TeamDataFetcher, TeamDomHandler };

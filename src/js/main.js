@@ -1,13 +1,17 @@
-import { teamsDOM, teamManager } from "./module/teams.js";
+import { TeamDataFetcher, TeamDomHandler } from "./module/teams.js";
+import { UtilityDomHandler } from "./module/utility.js";
 
-async function DOMHandler() {
-    const manager = await teamManager();
-    const teams = await manager.getTeams();
-    const teamDomHandler = teamsDOM();
+async function HandlePageContent() {
+    const teamData = await TeamDataFetcher();
+    const teams = await teamData.getTeams();
+    const teamDom = TeamDomHandler();
+    const utilityDom = UtilityDomHandler();
 
     const displayTeams = async () => {
         if (teams && teams.length) {
-            teamDomHandler.displayCards(teams);
+            const container = document.querySelector('#teams-content');
+            utilityDom.clearPageContent(container);
+            teamDom.displayCards(teams, container);
         } else {
             console.warn('No teams data available.');
         }
@@ -18,7 +22,7 @@ async function DOMHandler() {
 
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        const domManager = await DOMHandler();
+        const domManager = await HandlePageContent();
         domManager.displayTeams();
     } catch (err) {
         console.error('Error initializing the DOM handler:', err);

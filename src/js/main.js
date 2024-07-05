@@ -21,10 +21,12 @@ async function HandlePageContent() {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-    try {
-        const domManager = await HandlePageContent();
-        domManager.displayTeams();
-    } catch (err) {
-        console.error('Error initializing the DOM handler:', err);
+    if (location.pathname.endsWith('teams.html')) {
+        try {
+            const domManager = await HandlePageContent();
+            domManager.displayTeams();
+        } catch (err) {
+            console.error('Error initializing the DOM handler:', err);
+        }
     }
 });

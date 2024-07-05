@@ -16479,6 +16479,14 @@ fieldset:disabled .btn-group-vertical > .btn {
   text-transform: capitalize;
 }
 
+.group-item-icon {
+  background-color: #2962FF;
+  color: #F5F5F5;
+  padding: 1rem 1.5rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
 .card-team .card-image {
   position: relative;
   z-index: 0;

@@ -16505,6 +16505,11 @@ fieldset:disabled .btn-group-vertical > .btn {
   border: none;
 }
 
+.table-group {
+  background-color: white;
+  padding: 2rem 3rem;
+}
+
 .mask-dark {
   background-color: rgba(0, 0, 0, 0.25);
 }/*# sourceMappingURL=style.css.map */

@@ -16426,17 +16426,23 @@ fieldset:disabled .btn-group-vertical > .btn {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
-.intro-teams {
+.intro-teams,
+.intro-stadiums {
   height: 30vh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
   position: relative;
   z-index: 2;
 }
-.intro-teams .title, .intro-teams .sub-title {
+.intro-teams .title, .intro-teams .sub-title,
+.intro-stadiums .title,
+.intro-stadiums .sub-title {
   color: white;
   text-align: center;
+}
+
+.intro-teams {
+  background-position: center;
 }
 .intro-teams .title {
   font-size: 3rem;
@@ -16445,6 +16451,13 @@ fieldset:disabled .btn-group-vertical > .btn {
 .intro-teams .sub-title {
   font-size: 2.5rem;
   text-transform: uppercase;
+}
+
+.intro-stadiums {
+  background-position: bottom;
+}
+.intro-stadiums .title {
+  font-size: 4rem;
 }
 
 .card-team .card-image {

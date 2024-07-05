@@ -16395,6 +16395,7 @@ fieldset:disabled .btn-group-vertical > .btn {
 }
 
 .intro {
+  background-image: url("/img/olympiaStadion_1.jpg");
   display: flex;
   height: 40vh;
   background-position: center;
@@ -16442,6 +16443,7 @@ fieldset:disabled .btn-group-vertical > .btn {
 }
 
 .intro-teams {
+  background-image: url("/img/grass.jpg");
   background-position: center;
 }
 .intro-teams .title {
@@ -16454,6 +16456,7 @@ fieldset:disabled .btn-group-vertical > .btn {
 }
 
 .intro-stadiums {
+  background-image: url("/img/olympiaStadion.jpg");
   background-position: bottom;
 }
 .intro-stadiums .title {

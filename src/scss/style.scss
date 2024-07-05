@@ -104,6 +104,7 @@
 
 // Section
 .intro {
+   background-image: url('/img/olympiaStadion_1.jpg');
    display: flex;
    height: 40vh;
    background-position: center;
@@ -150,6 +151,7 @@
 }
 
 .intro-teams {
+   background-image: url('/img/grass.jpg');
    background-position: center;
    .title {
       font-size: 3rem;
@@ -162,6 +164,7 @@
 }
 
 .intro-stadiums {
+   background-image: url('/img/olympiaStadion.jpg');
    background-position: bottom;
    .title {
       font-size: 4rem;

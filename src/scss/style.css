@@ -16428,7 +16428,8 @@ fieldset:disabled .btn-group-vertical > .btn {
 }
 
 .intro-teams,
-.intro-stadiums {
+.intro-stadiums,
+.intro-groups {
   height: 30vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -16437,7 +16438,9 @@ fieldset:disabled .btn-group-vertical > .btn {
 }
 .intro-teams .title, .intro-teams .sub-title,
 .intro-stadiums .title,
-.intro-stadiums .sub-title {
+.intro-stadiums .sub-title,
+.intro-groups .title,
+.intro-groups .sub-title {
   color: white;
   text-align: center;
 }
@@ -16461,6 +16464,19 @@ fieldset:disabled .btn-group-vertical > .btn {
 }
 .intro-stadiums .title {
   font-size: 4rem;
+}
+
+.intro-groups {
+  background-image: url("/img/bridge.jpg");
+  background-position: center;
+}
+.intro-groups .title {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.intro-groups .sub-title {
+  font-size: 2.5rem;
+  text-transform: capitalize;
 }
 
 .card-team .card-image {

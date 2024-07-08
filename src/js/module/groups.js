@@ -16,7 +16,20 @@ async function TableDataFetcher() {
 }
 
 async function MatchesDataFetcher() {
+    const getResults = async () => {
+        try {
+            const response = await fetch('/src/json/results.json', { mode: "cors" });
+            if (!response.ok) {
+                throw new Error('Groups results data response was not ok.');
+            }
+            const results = await response.json();
+            return results;
+        } catch (err) {
+            console.error('There has been a problem with your fetch operation:', err);
+        }
+    };
 
+    return { getResults };
 }
 
 function GroupDomHandler() {

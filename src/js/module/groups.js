@@ -86,13 +86,15 @@ function GroupDomHandler() {
                 });
 
                 if (cell.icon) {
-                    const icon = utilityDom.createDOMElement({
-                        elementTag: 'i',
-                        elementClass: cell.icon.class,
-                        elementAtrType: cell.icon.atrType,
-                        elementAtrValue: cell.icon.atrValue
+                    cell.icon.forEach(icon => {
+                        const iconElement = utilityDom.createDOMElement({
+                            elementTag: 'i',
+                            elementClass: icon.class,
+                            elementAtrType: icon.atrType,
+                            elementAtrValue: icon.atrValue
+                        });
+                        td.appendChild(iconElement);
                     });
-                    td.appendChild(icon);
                 }
 
                 if (cell.text) {
@@ -113,6 +115,42 @@ function GroupDomHandler() {
 
         return tableWrapper;
     };
+
+    const displayTable = (groups, container) => {
+        groups.forEach(group => {
+            // Create a table for each table
+            const tableWrapper = utilityDom.createDOMElement({
+                elementTag: 'div',
+                elementClass: ['col-ultra-5', 'col-xxxl-6', 'col-xxl-7', 'col-xl-9', 'col-lg-auto', 'col-sm-12', 'mx-auto'],
+                elementId: group.title
+            });
+
+            // Define headers
+            const headers = group.headers.map(header => ({
+                class: header.class,
+                text: header.text
+            }));
+
+            // Define data
+            const data = group.data.map(row => row.map(cell => ({
+                class: cell.class,
+                icon: cell.icon,
+                text: cell.text
+            })));
+
+            // Define table
+            const table = createTable({
+                groupTitle: group.title,
+                headers: headers,
+                data: data
+            });
+
+            tableWrapper.appendChild(table);
+            container.appendChild(tableWrapper);
+        });
+    };
+
+    return { displayTable };
 }
 
 export { TableDataFetcher, MatchesDataFetcher };

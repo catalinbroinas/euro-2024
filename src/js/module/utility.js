@@ -9,7 +9,7 @@ function UtilityDomHandler() {
 
     const createDOMElement = ({
         elementTag,
-        elementClass,
+        elementClass = [],
         elementId,
         elementText,
         elementScope,
@@ -19,8 +19,10 @@ function UtilityDomHandler() {
     }) => {
         const element = document.createElement(elementTag);
 
-        if (elementClass) {
-            elementClass.forEach(className => element.classList.add(className));
+        if (elementClass && Array.isArray(elementClass)) {
+            elementClass.forEach(className => {
+                element.classList.add(className);
+            });
         }
 
         if (elementId) {

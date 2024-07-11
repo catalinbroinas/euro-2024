@@ -82,14 +82,14 @@ function GroupDomHandler() {
             row.forEach(cell => {
                 const td = utilityDom.createDOMElement({
                     elementTag: 'td',
-                    elementClass: cell.class ? cell.class : ''
+                    elementClass: cell.class ? cell.class : []
                 });
 
                 if (cell.icon) {
                     cell.icon.forEach(icon => {
                         const iconElement = utilityDom.createDOMElement({
                             elementTag: 'i',
-                            elementClass: Array.isArray(icon.class) ? icon.class.join(' ') : icon.class,
+                            elementClass: icon.class ? icon.class : [],
                             elementAtrType: 'title',
                             elementAtrValue: icon.title
                         });
@@ -153,4 +153,4 @@ function GroupDomHandler() {
     return { displayTable };
 }
 
-export { TableDataFetcher, MatchesDataFetcher };
+export { TableDataFetcher, MatchesDataFetcher, GroupDomHandler };

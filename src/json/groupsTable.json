@@ -1,0 +1,90 @@
+[
+  {
+    "groupTitle": "Group A",
+    "headers": [
+      { "text": "#" },
+      { "text": "Team", "class": "text-center" },
+      { "text": "P" },
+      { "text": "W" },
+      { "text": "D" },
+      { "text": "L" },
+      { "text": "For", "class": "text-center" },
+      { "text": "Against", "class": "text-center" },
+      { "text": "Diff", "class": "text-center" },
+      { "text": "Points", "class": "text-center" }
+    ],
+    "data": [
+      [
+        { "class": "fw-bold", "text": "1." },
+        {
+          "icon": [
+            { "class": ["flag", "flag-germany", "me-2"], "title": "Germany" }
+          ],
+          "text": "Germany"
+        },
+        { "text": "3" },
+        { "text": "2" },
+        { "text": "1" },
+        { "text": "0" },
+        { "class": "text-center", "text": "8" },
+        { "class": "text-center", "text": "2" },
+        { "class": "text-center", "text": "+6" },
+        { "class": ["text-center", "fw-bold"], "text": "7" }
+      ],
+      [
+        { "class": "fw-bold", "text": "2." },
+        {
+          "icon": [
+            {
+              "class": ["flag", "flag-switzerland", "me-2"],
+              "title": "Switzerland"
+            }
+          ],
+          "text": "Switzerland"
+        },
+        { "text": "3" },
+        { "text": "1" },
+        { "text": "2" },
+        { "text": "0" },
+        { "class": "text-center", "text": "5" },
+        { "class": "text-center", "text": "3" },
+        { "class": "text-center", "text": "+2" },
+        { "class": ["text-center", "fw-bold"], "text": "5" }
+      ],
+      [
+        { "class": "fw-bold", "text": "3." },
+        {
+          "icon": [
+            { "class": ["flag", "flag-hungary", "me-2"], "title": "Hungary" }
+          ],
+          "text": "Hungary"
+        },
+        { "text": "3" },
+        { "text": "1" },
+        { "text": "0" },
+        { "text": "1" },
+        { "class": "text-center", "text": "2" },
+        { "class": "text-center", "text": "5" },
+        { "class": "text-center", "text": "-3" },
+        { "class": ["text-center", "fw-bold"], "text": "3" }
+      ],
+      [
+        { "class": "fw-bold", "text": "4." },
+        {
+          "icon": [
+            { "class": ["flag", "flag-scotland", "me-2"], "title": "Scotland" }
+          ],
+          "text": "Scotland"
+        },
+        { "text": "3" },
+        { "text": "0" },
+        { "text": "1" },
+        { "text": "2" },
+        { "class": "text-center", "text": "2" },
+        { "class": "text-center", "text": "7" },
+        { "class": "text-center", "text": "-5" },
+        { "class": ["text-center", "fw-bold"], "text": "1" }
+      ]
+    ]
+  }
+]

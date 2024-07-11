@@ -89,9 +89,9 @@ function GroupDomHandler() {
                     cell.icon.forEach(icon => {
                         const iconElement = utilityDom.createDOMElement({
                             elementTag: 'i',
-                            elementClass: icon.class,
-                            elementAtrType: icon.atrType,
-                            elementAtrValue: icon.atrValue
+                            elementClass: Array.isArray(icon.class) ? icon.class.join(' ') : icon.class,
+                            elementAtrType: 'title',
+                            elementAtrValue: icon.title
                         });
                         td.appendChild(iconElement);
                     });
@@ -127,20 +127,20 @@ function GroupDomHandler() {
 
             // Define headers
             const headers = group.headers.map(header => ({
-                class: header.class,
+                class: header.class ? header.class : '',
                 text: header.text
             }));
 
             // Define data
             const data = group.data.map(row => row.map(cell => ({
-                class: cell.class,
-                icon: cell.icon,
-                text: cell.text
+                class: cell.class ? cell.class : '',
+                icon: cell.icon ? cell.icon : [],
+                text: cell.text ? cell.text : ''
             })));
 
             // Define table
             const table = createTable({
-                groupTitle: group.title,
+                groupTitle: group.groupTitle,
                 headers: headers,
                 data: data
             });

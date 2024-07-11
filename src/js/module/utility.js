@@ -7,8 +7,43 @@ function UtilityDomHandler() {
         }
     };
 
+    const createDOMElement = ({
+        elementTag,
+        elementClass,
+        elementId,
+        elementText,
+        elementAtrType,
+        elementAtrValue,
+        clickHandler
+    }) => {
+        const element = document.createElement(elementTag);
+
+        if (elementClass) {
+            elementClass.forEach(className => element.classList.add(className));
+        }
+
+        if (elementId) {
+            element.setAttribute('id', elementId);
+        }
+
+        if (elementAtrType) {
+            element.setAttribute(elementAtrType, elementAtrValue);
+        }
+
+        if (elementText) {
+            element.textContent = elementText;
+        }
+
+        if (clickHandler) {
+            element.addEventListener('click', clickHandler);
+        }
+
+        return element;
+    };
+
     return {
-        clearPageContent
+        clearPageContent,
+        createDOMElement
     };
 }
 

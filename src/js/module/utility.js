@@ -12,6 +12,7 @@ function UtilityDomHandler() {
         elementClass,
         elementId,
         elementText,
+        elementScope,
         elementAtrType,
         elementAtrValue,
         clickHandler
@@ -24,6 +25,10 @@ function UtilityDomHandler() {
 
         if (elementId) {
             element.setAttribute('id', elementId);
+        }
+
+        if (elementScope) {
+            element.setAttribute('scope', elementScope);
         }
 
         if (elementAtrType) {

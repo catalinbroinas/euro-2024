@@ -116,6 +116,80 @@ function GroupDomHandler() {
         return tableWrapper;
     };
 
+    const createMatch = ({
+        home,
+        away,
+        homeScore,
+        awayScore
+    }) => {
+        // Create card structure
+        const cardWrapper = utilityDom.createDOMElement({
+            elementTag: 'div',
+            elementClass: ['col-xxl-6', 'col-lg-4', 'col-sm-10']
+        });
+        const card = utilityDom.createDOMElement({
+            elementTag: 'div',
+            elementClass: 'card'
+        });
+        const cardBody = utilityDom.createDOMElement({
+            elementTag: 'div',
+            elementClass: ['card-body', 'py-2']
+        });
+
+        // Create card body structure
+        const cardList = utilityDom.createDOMElement({
+            elementTag: 'ul',
+            elementClass: ['list-group', 'list-group-light']
+        });
+        const cardListItemOne = utilityDom.createDOMElement({
+            elementTag: 'li',
+            elementClass: ['list-group-item', 'd-flex', 'justify-content-between']
+        });
+        const cardListItemTwo = utilityDom.createDOMElement({
+            elementTag: 'li',
+            elementClass: ['list-group-item', 'd-flex', 'justify-content-between']
+        });
+
+        // Create card body items
+        const homeTeam = utilityDom.createDOMElement({
+            elementTag: 'h5',
+            elementClass: ['text', 'm-0'],
+            elementText: home
+        });
+        const awayTeam = utilityDom.createDOMElement({
+            elementTag: 'h5',
+            elementClass: ['text', 'm-0'],
+            elementText: away
+        });
+        const homeTeamScore = utilityDom.createDOMElement({
+            elementTag: 'h5',
+            elementClass: ['title', 'm-0'],
+            elementText: homeScore
+        });
+        const awayTeamScore = utilityDom.createDOMElement({
+            elementTag: 'h5',
+            elementClass: ['title', 'm-0'],
+            elementText: awayScore
+        });
+
+        // Append items to list
+        cardListItemOne.appendChild(homeTeam);
+        cardListItemOne.appendChild(homeTeamScore);
+
+        cardListItemTwo.appendChild(awayTeam);
+        cardListItemTwo.appendChild(awayTeamScore);
+
+        cardList.appendChild(cardListItemOne);
+        cardList.appendChild(cardListItemTwo);
+
+        // Append list to card body
+        cardBody.appendChild(cardList);
+        card.appendChild(cardBody);
+        cardWrapper.appendChild(card);
+
+        return cardWrapper;
+    };
+
     const displayTable = (groups, container) => {
         groups.forEach(group => {
             // Identify group id

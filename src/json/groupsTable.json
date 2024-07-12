@@ -86,5 +86,451 @@
         { "class": ["text-center", "fw-bold"], "text": "1" }
       ]
     ]
+  },
+  {
+    "groupTitle": "Group B",
+    "headers": [
+      { "text": "#" },
+      { "text": "Team", "class": ["text-center"] },
+      { "text": "P" },
+      { "text": "W" },
+      { "text": "D" },
+      { "text": "L" },
+      { "text": "For", "class": ["text-center"] },
+      { "text": "Against", "class": ["text-center"] },
+      { "text": "Diff", "class": ["text-center"] },
+      { "text": "Points", "class": ["text-center"] }
+    ],
+    "data": [
+      [
+        { "class": "fw-bold", "text": "1." },
+        {
+          "icon": [
+            { "class": ["flag", "flag-spain", "me-2"], "title": "Spain" }
+          ],
+          "text": "Spain"
+        },
+        { "text": "3" },
+        { "text": "3" },
+        { "text": "0" },
+        { "text": "0" },
+        { "class": ["text-center"], "text": "5" },
+        { "class": ["text-center"], "text": "0" },
+        { "class": ["text-center"], "text": "+5" },
+        { "class": ["text-center", "fw-bold"], "text": "9" }
+      ],
+      [
+        { "class": ["fw-bold"], "text": "2." },
+        {
+          "icon": [
+            {
+              "class": ["flag", "flag-italy", "me-2"],
+              "title": "Italy"
+            }
+          ],
+          "text": "Italy"
+        },
+        { "text": "3" },
+        { "text": "1" },
+        { "text": "1" },
+        { "text": "1" },
+        { "class": ["text-center"], "text": "3" },
+        { "class": ["text-center"], "text": "3" },
+        { "class": ["text-center"], "text": "0" },
+        { "class": ["text-center", "fw-bold"], "text": "4" }
+      ],
+      [
+        { "class": ["fw-bold"], "text": "3." },
+        {
+          "icon": [
+            { "class": ["flag", "flag-croatia", "me-2"], "title": "Croatia" }
+          ],
+          "text": "Croatia"
+        },
+        { "text": "3" },
+        { "text": "0" },
+        { "text": "2" },
+        { "text": "1" },
+        { "class": ["text-center"], "text": "3" },
+        { "class": ["text-center"], "text": "6" },
+        { "class": ["text-center"], "text": "-3" },
+        { "class": ["text-center", "fw-bold"], "text": "2" }
+      ],
+      [
+        { "class": ["fw-bold"], "text": "4." },
+        {
+          "icon": [
+            { "class": ["flag", "flag-albania", "me-2"], "title": "Albania" }
+          ],
+          "text": "Albania"
+        },
+        { "text": "3" },
+        { "text": "0" },
+        { "text": "1" },
+        { "text": "2" },
+        { "class": ["text-center"], "text": "3" },
+        { "class": ["text-center"], "text": "5" },
+        { "class": ["text-center"], "text": "-2" },
+        { "class": ["text-center", "fw-bold"], "text": "1" }
+      ]
+    ]
+  },
+  {
+    "groupTitle": "Group C",
+    "headers": [
+      { "text": "#" },
+      { "text": "Team", "class": ["text-center"] },
+      { "text": "P" },
+      { "text": "W" },
+      { "text": "D" },
+      { "text": "L" },
+      { "text": "For", "class": ["text-center"] },
+      { "text": "Against", "class": ["text-center"] },
+      { "text": "Diff", "class": ["text-center"] },
+      { "text": "Points", "class": ["text-center"] }
+    ],
+    "data": [
+      [
+        { "class": "fw-bold", "text": "1." },
+        {
+          "icon": [
+            { "class": ["flag", "flag-england", "me-2"], "title": "England" }
+          ],
+          "text": "England"
+        },
+        { "text": "3" },
+        { "text": "1" },
+        { "text": "2" },
+        { "text": "0" },
+        { "class": ["text-center"], "text": "2" },
+        { "class": ["text-center"], "text": "1" },
+        { "class": ["text-center"], "text": "+1" },
+        { "class": ["text-center", "fw-bold"], "text": "5" }
+      ],
+      [
+        { "class": ["fw-bold"], "text": "2." },
+        {
+          "icon": [
+            {
+              "class": ["flag", "flag-denmark", "me-2"],
+              "title": "Denmark"
+            }
+          ],
+          "text": "Denmark"
+        },
+        { "text": "3" },
+        { "text": "0" },
+        { "text": "3" },
+        { "text": "0" },
+        { "class": ["text-center"], "text": "2" },
+        { "class": ["text-center"], "text": "2" },
+        { "class": ["text-center"], "text": "0" },
+        { "class": ["text-center", "fw-bold"], "text": "3" }
+      ],
+      [
+        { "class": ["fw-bold"], "text": "3." },
+        {
+          "icon": [
+            { "class": ["flag", "flag-slovenia", "me-2"], "title": "Slovenia" }
+          ],
+          "text": "Slovenia"
+        },
+        { "text": "3" },
+        { "text": "0" },
+        { "text": "3" },
+        { "text": "0" },
+        { "class": ["text-center"], "text": "2" },
+        { "class": ["text-center"], "text": "2" },
+        { "class": ["text-center"], "text": "0" },
+        { "class": ["text-center", "fw-bold"], "text": "3" }
+      ],
+      [
+        { "class": ["fw-bold"], "text": "4." },
+        {
+          "icon": [
+            { "class": ["flag", "flag-serbia", "me-2"], "title": "Serbia" }
+          ],
+          "text": "Serbia"
+        },
+        { "text": "3" },
+        { "text": "0" },
+        { "text": "2" },
+        { "text": "1" },
+        { "class": ["text-center"], "text": "1" },
+        { "class": ["text-center"], "text": "2" },
+        { "class": ["text-center"], "text": "-1" },
+        { "class": ["text-center", "fw-bold"], "text": "2" }
+      ]
+    ]
+  },
+  {
+    "groupTitle": "Group D",
+    "headers": [
+      { "text": "#" },
+      { "text": "Team", "class": ["text-center"] },
+      { "text": "P" },
+      { "text": "W" },
+      { "text": "D" },
+      { "text": "L" },
+      { "text": "For", "class": ["text-center"] },
+      { "text": "Against", "class": ["text-center"] },
+      { "text": "Diff", "class": ["text-center"] },
+      { "text": "Points", "class": ["text-center"] }
+    ],
+    "data": [
+      [
+        { "class": "fw-bold", "text": "1." },
+        {
+          "icon": [
+            { "class": ["flag", "flag-austria", "me-2"], "title": "Austria" }
+          ],
+          "text": "Austria"
+        },
+        { "text": "3" },
+        { "text": "2" },
+        { "text": "0" },
+        { "text": "1" },
+        { "class": ["text-center"], "text": "6" },
+        { "class": ["text-center"], "text": "4" },
+        { "class": ["text-center"], "text": "+2" },
+        { "class": ["text-center", "fw-bold"], "text": "6" }
+      ],
+      [
+        { "class": ["fw-bold"], "text": "2." },
+        {
+          "icon": [
+            {
+              "class": ["flag", "flag-france", "me-2"],
+              "title": "France"
+            }
+          ],
+          "text": "France"
+        },
+        { "text": "3" },
+        { "text": "1" },
+        { "text": "2" },
+        { "text": "0" },
+        { "class": ["text-center"], "text": "2" },
+        { "class": ["text-center"], "text": "1" },
+        { "class": ["text-center"], "text": "+1" },
+        { "class": ["text-center", "fw-bold"], "text": "5" }
+      ],
+      [
+        { "class": ["fw-bold"], "text": "3." },
+        {
+          "icon": [
+            {
+              "class": ["flag", "flag-netherlands", "me-2"],
+              "title": "Netherlands"
+            }
+          ],
+          "text": "Netherlands"
+        },
+        { "text": "3" },
+        { "text": "1" },
+        { "text": "1" },
+        { "text": "1" },
+        { "class": ["text-center"], "text": "4" },
+        { "class": ["text-center"], "text": "4" },
+        { "class": ["text-center"], "text": "0" },
+        { "class": ["text-center", "fw-bold"], "text": "4" }
+      ],
+      [
+        { "class": ["fw-bold"], "text": "4." },
+        {
+          "icon": [
+            { "class": ["flag", "flag-poland", "me-2"], "title": "Poland" }
+          ],
+          "text": "Poland"
+        },
+        { "text": "3" },
+        { "text": "0" },
+        { "text": "1" },
+        { "text": "2" },
+        { "class": ["text-center"], "text": "3" },
+        { "class": ["text-center"], "text": "6" },
+        { "class": ["text-center"], "text": "-3" },
+        { "class": ["text-center", "fw-bold"], "text": "1" }
+      ]
+    ]
+  },
+  {
+    "groupTitle": "Group E",
+    "headers": [
+      { "text": "#" },
+      { "text": "Team", "class": ["text-center"] },
+      { "text": "P" },
+      { "text": "W" },
+      { "text": "D" },
+      { "text": "L" },
+      { "text": "For", "class": ["text-center"] },
+      { "text": "Against", "class": ["text-center"] },
+      { "text": "Diff", "class": ["text-center"] },
+      { "text": "Points", "class": ["text-center"] }
+    ],
+    "data": [
+      [
+        { "class": "fw-bold", "text": "1." },
+        {
+          "icon": [
+            { "class": ["flag", "flag-romania", "me-2"], "title": "Romania" }
+          ],
+          "text": "Romania"
+        },
+        { "text": "3" },
+        { "text": "1" },
+        { "text": "1" },
+        { "text": "1" },
+        { "class": ["text-center"], "text": "4" },
+        { "class": ["text-center"], "text": "3" },
+        { "class": ["text-center"], "text": "+1" },
+        { "class": ["text-center", "fw-bold"], "text": "4" }
+      ],
+      [
+        { "class": ["fw-bold"], "text": "2." },
+        {
+          "icon": [
+            {
+              "class": ["flag", "flag-belgium", "me-2"],
+              "title": "Belgium"
+            }
+          ],
+          "text": "Belgium"
+        },
+        { "text": "3" },
+        { "text": "1" },
+        { "text": "1" },
+        { "text": "1" },
+        { "class": ["text-center"], "text": "2" },
+        { "class": ["text-center"], "text": "1" },
+        { "class": ["text-center"], "text": "+1" },
+        { "class": ["text-center", "fw-bold"], "text": "4" }
+      ],
+      [
+        { "class": ["fw-bold"], "text": "3." },
+        {
+          "icon": [
+            { "class": ["flag", "flag-slovakia", "me-2"], "title": "Slovakia" }
+          ],
+          "text": "Slovakia"
+        },
+        { "text": "3" },
+        { "text": "1" },
+        { "text": "1" },
+        { "text": "1" },
+        { "class": ["text-center"], "text": "3" },
+        { "class": ["text-center"], "text": "3" },
+        { "class": ["text-center"], "text": "0" },
+        { "class": ["text-center", "fw-bold"], "text": "4" }
+      ],
+      [
+        { "class": ["fw-bold"], "text": "4." },
+        {
+          "icon": [
+            { "class": ["flag", "flag-ukraine", "me-2"], "title": "Ukraine" }
+          ],
+          "text": "Ukraine"
+        },
+        { "text": "3" },
+        { "text": "1" },
+        { "text": "1" },
+        { "text": "1" },
+        { "class": ["text-center"], "text": "2" },
+        { "class": ["text-center"], "text": "4" },
+        { "class": ["text-center"], "text": "-2" },
+        { "class": ["text-center", "fw-bold"], "text": "4" }
+      ]
+    ]
+  },
+  {
+    "groupTitle": "Group F",
+    "headers": [
+      { "text": "#" },
+      { "text": "Team", "class": ["text-center"] },
+      { "text": "P" },
+      { "text": "W" },
+      { "text": "D" },
+      { "text": "L" },
+      { "text": "For", "class": ["text-center"] },
+      { "text": "Against", "class": ["text-center"] },
+      { "text": "Diff", "class": ["text-center"] },
+      { "text": "Points", "class": ["text-center"] }
+    ],
+    "data": [
+      [
+        { "class": "fw-bold", "text": "1." },
+        {
+          "icon": [
+            { "class": ["flag", "flag-portugal", "me-2"], "title": "Portugal" }
+          ],
+          "text": "Portugal"
+        },
+        { "text": "3" },
+        { "text": "2" },
+        { "text": "0" },
+        { "text": "1" },
+        { "class": ["text-center"], "text": "5" },
+        { "class": ["text-center"], "text": "3" },
+        { "class": ["text-center"], "text": "+2" },
+        { "class": ["text-center", "fw-bold"], "text": "6" }
+      ],
+      [
+        { "class": ["fw-bold"], "text": "2." },
+        {
+          "icon": [
+            {
+              "class": ["flag", "flag-turkey", "me-2"],
+              "title": "Turkey"
+            }
+          ],
+          "text": "Turkey"
+        },
+        { "text": "3" },
+        { "text": "2" },
+        { "text": "0" },
+        { "text": "1" },
+        { "class": ["text-center"], "text": "5" },
+        { "class": ["text-center"], "text": "5" },
+        { "class": ["text-center"], "text": "0" },
+        { "class": ["text-center", "fw-bold"], "text": "6" }
+      ],
+      [
+        { "class": ["fw-bold"], "text": "3." },
+        {
+          "icon": [
+            { "class": ["flag", "flag-georgia", "me-2"], "title": "Georgia" }
+          ],
+          "text": "Georgia"
+        },
+        { "text": "3" },
+        { "text": "1" },
+        { "text": "1" },
+        { "text": "1" },
+        { "class": ["text-center"], "text": "4" },
+        { "class": ["text-center"], "text": "4" },
+        { "class": ["text-center"], "text": "0" },
+        { "class": ["text-center", "fw-bold"], "text": "4" }
+      ],
+      [
+        { "class": ["fw-bold"], "text": "4." },
+        {
+          "icon": [
+            {
+              "class": ["flag", "flag-czech-republic", "me-2"],
+              "title": "Czech Republic"
+            }
+          ],
+          "text": "Czech Republic"
+        },
+        { "text": "3" },
+        { "text": "0" },
+        { "text": "1" },
+        { "text": "2" },
+        { "class": ["text-center"], "text": "3" },
+        { "class": ["text-center"], "text": "5" },
+        { "class": ["text-center"], "text": "-2" },
+        { "class": ["text-center", "fw-bold"], "text": "1" }
+      ]
+    ]
   }
 ]

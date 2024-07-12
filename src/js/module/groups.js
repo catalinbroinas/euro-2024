@@ -118,11 +118,14 @@ function GroupDomHandler() {
 
     const displayTable = (groups, container) => {
         groups.forEach(group => {
+            // Identify group id
+            const groupLetter = group.groupTitle.charAt(group.groupTitle.length - 1);
+
             // Create a table for each table
             const tableWrapper = utilityDom.createDOMElement({
                 elementTag: 'div',
                 elementClass: ['col-ultra-5', 'col-xxxl-6', 'col-xxl-7', 'col-xl-9', 'col-lg-auto', 'col-sm-12', 'mx-auto'],
-                elementId: group.title
+                elementId: `group-${groupLetter}-table`
             });
 
             // Define headers

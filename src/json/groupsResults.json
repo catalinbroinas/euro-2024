@@ -13,6 +13,235 @@
         "away": "Hungary",
         "homeScore": "3",
         "awayScore": "1"
+      },
+      {
+        "home": "Germany",
+        "away": "Hungary",
+        "homeScore": "2",
+        "awayScore": "0"
+      },
+      {
+        "home": "Switzerland",
+        "away": "Scotland",
+        "homeScore": "1",
+        "awayScore": "1"
+      },
+      {
+        "home": "Switzerland",
+        "away": "Germany",
+        "homeScore": "1",
+        "awayScore": "1"
+      },
+      {
+        "home": "Scotland",
+        "away": "Hungary",
+        "homeScore": "0",
+        "awayScore": "1"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Group B",
+    "results": [
+      {
+        "home": "Spain",
+        "away": "Croatia",
+        "homeScore": "3",
+        "awayScore": "0"
+      },
+      {
+        "home": "Italy",
+        "away": "Albania",
+        "homeScore": "2",
+        "awayScore": "1"
+      },
+      {
+        "home": "Croatia",
+        "away": "Albania",
+        "homeScore": "2",
+        "awayScore": "2"
+      },
+      {
+        "home": "Spain",
+        "away": "Italy",
+        "homeScore": "1",
+        "awayScore": "0"
+      },
+      {
+        "home": "Austria",
+        "away": "Spain",
+        "homeScore": "0",
+        "awayScore": "1"
+      },
+      {
+        "home": "Croatia",
+        "away": "Italy",
+        "homeScore": "1",
+        "awayScore": "1"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Group C",
+    "results": [
+      {
+        "home": "Slovenia",
+        "away": "Denmark",
+        "homeScore": "1",
+        "awayScore": "1"
+      },
+      {
+        "home": "England",
+        "away": "Serbia",
+        "homeScore": "1",
+        "awayScore": "0"
+      },
+      {
+        "home": "Slovenia",
+        "away": "Serbia",
+        "homeScore": "1",
+        "awayScore": "1"
+      },
+      {
+        "home": "Denmark",
+        "away": "England",
+        "homeScore": "1",
+        "awayScore": "1"
+      },
+      {
+        "home": "England",
+        "away": "Slovenia",
+        "homeScore": "0",
+        "awayScore": "0"
+      },
+      {
+        "home": "Denmark",
+        "away": "Serbia",
+        "homeScore": "0",
+        "awayScore": "0"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Group D",
+    "results": [
+      {
+        "home": "Poland",
+        "away": "Netherlands",
+        "homeScore": "1",
+        "awayScore": "2"
+      },
+      {
+        "home": "Austria",
+        "away": "France",
+        "homeScore": "0",
+        "awayScore": "1"
+      },
+      {
+        "home": "Poland",
+        "away": "Austria",
+        "homeScore": "1",
+        "awayScore": "3"
+      },
+      {
+        "home": "Netherlands",
+        "away": "France",
+        "homeScore": "0",
+        "awayScore": "0"
+      },
+      {
+        "home": "Netherlands",
+        "away": "Austria",
+        "homeScore": "2",
+        "awayScore": "3"
+      },
+      {
+        "home": "France",
+        "away": "Poland",
+        "homeScore": "1",
+        "awayScore": "1"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Group E",
+    "results": [
+      {
+        "home": "Romania",
+        "away": "Ukraine",
+        "homeScore": "3",
+        "awayScore": "0"
+      },
+      {
+        "home": "Belgium",
+        "away": "Slovakia",
+        "homeScore": "0",
+        "awayScore": "1"
+      },
+      {
+        "home": "Slovakia",
+        "away": "Ukraine",
+        "homeScore": "1",
+        "awayScore": "2"
+      },
+      {
+        "home": "Belgium",
+        "away": "Romania",
+        "homeScore": "2",
+        "awayScore": "0"
+      },
+      {
+        "home": "Slovakia",
+        "away": "Romania",
+        "homeScore": "1",
+        "awayScore": "1"
+      },
+      {
+        "home": "Ukraine",
+        "away": "Belgium",
+        "homeScore": "0",
+        "awayScore": "0"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Group F",
+    "results": [
+      {
+        "home": "Turkey",
+        "away": "Georgia",
+        "homeScore": "3",
+        "awayScore": "1"
+      },
+      {
+        "home": "Portugal",
+        "away": "Czech Republic",
+        "homeScore": "2",
+        "awayScore": "1"
+      },
+      {
+        "home": "Georgia",
+        "away": "Czech Republic",
+        "homeScore": "1",
+        "awayScore": "1"
+      },
+      {
+        "home": "Turkey",
+        "away": "Portugal",
+        "homeScore": "0",
+        "awayScore": "3"
+      },
+      {
+        "home": "Georgia",
+        "away": "Portugal",
+        "homeScore": "2",
+        "awayScore": "0"
+      },
+      {
+        "home": "Czech Republic",
+        "away": "Turkey",
+        "homeScore": "1",
+        "awayScore": "2"
       }
     ]
   }

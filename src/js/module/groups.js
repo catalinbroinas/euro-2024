@@ -129,7 +129,7 @@ function GroupDomHandler() {
         });
         const card = utilityDom.createDOMElement({
             elementTag: 'div',
-            elementClass: 'card'
+            elementClass: ['card']
         });
         const cardBody = utilityDom.createDOMElement({
             elementTag: 'div',

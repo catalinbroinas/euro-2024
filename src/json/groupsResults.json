@@ -1,0 +1,19 @@
+[
+  {
+    "groupTitle": "Group A",
+    "results": [
+      {
+        "home": "Germany",
+        "away": "Scotland",
+        "homeScore": "5",
+        "awayScore": "1"
+      },
+      {
+        "home": "Switzerland",
+        "away": "Hungary",
+        "homeScore": "3",
+        "awayScore": "1"
+      }
+    ]
+  }
+]

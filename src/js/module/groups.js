@@ -227,7 +227,39 @@ function GroupDomHandler() {
         });
     };
 
-    return { displayTable };
+    const displayMatches = (groups, container) => {
+        groups.forEach(group => {
+            // Identify group id
+            const groupLetter = group.groupTitle.charAt(group.groupTitle.length - 1);
+
+            // Create container for all matches
+            const resultsWrapper = utilityDom.createDOMElement({
+                elementTag: 'div',
+                elementClass: ['col-ultra-5', 'col-xxxl-6', 'col-xxl-5', 'col-sm-12'],
+                elementId: `group-${groupLetter}-results`
+            });
+
+            const resultsRow = utilityDom.createDOMElement({
+                elementTag: 'div',
+                elementClass: ['row', 'g-4']
+            });
+
+            group.results.forEach(match => {
+                const card = createMatch({
+                    home: match.home,
+                    away: match.away,
+                    homeScore: match.homeScore,
+                    awayScore: match.awayScore,
+                });
+                resultsRow.appendChild(card);
+            });
+
+            resultsWrapper.appendChild(resultsRow);
+            container.appendChild(resultsWrapper);
+        });
+    };
+
+    return { displayTable, displayMatches };
 }
 
 export { TableDataFetcher, MatchesDataFetcher, GroupDomHandler };

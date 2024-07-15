@@ -38,7 +38,7 @@ async function HandlePageContent() {
             const container = document.querySelector('#groups-content');
             utilityDom.clearPageContent(container);
 
-            groups.forEach(group => {
+            groups.forEach((group, index) => {
                 // Identify group id
                 const groupLetter = group.groupTitle.charAt(group.groupTitle.length - 1);
 
@@ -52,7 +52,7 @@ async function HandlePageContent() {
                 // Create column for group table
                 const tableWrapper = utilityDom.createDOMElement({
                     elementTag: 'div',
-                    elementClass: ['col-ultra-5', 'col-xxxl-6', 'col-xxl-7', 'col-xl-9', 'col-lg-auto', 'col-sm-12', 'mx-auto'],
+                    elementClass: ['col-ultra-5', 'col-xxxl-6', 'col-xxl-7', 'col-xl-9', 'col-lg-auto', 'col-sm-12', 'mx-auto', 'my-0'],
                     elementId: `group-${groupLetter}-table`
                 });
 
@@ -65,7 +65,7 @@ async function HandlePageContent() {
                 // Create column for group results
                 const resultsWrapper = utilityDom.createDOMElement({
                     elementTag: 'div',
-                    elementClass: ['col-ultra-5', 'col-xxxl-6', 'col-xxl-5', 'col-sm-12'],
+                    elementClass: ['col-ultra-5', 'col-xxxl-6', 'col-xxl-5', 'col-sm-12', 'my-0'],
                     elementId: `group-${groupLetter}-results`
                 });
 
@@ -84,6 +84,15 @@ async function HandlePageContent() {
 
                 // Add group container to main container
                 container.appendChild(groupWrapper);
+
+                // Create divider between groups, but not after the last group
+                if (index < groups.length - 1) {
+                    const divider = utilityDom.createDOMElement({
+                        elementTag: 'hr',
+                        elementClass: ['hr', 'my-5', 'mx-0']
+                    });
+                    container.appendChild(divider);
+                }
             });
         } else {
             console.warn('No groups data available.');

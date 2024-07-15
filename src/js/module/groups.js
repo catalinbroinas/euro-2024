@@ -172,6 +172,15 @@ function GroupDomHandler() {
             elementText: awayScore
         });
 
+        // Determine the winning team and apply bold class
+        const homeScoreInt = parseInt(homeScore);
+        const awayScoreInt = parseInt(awayScore);
+        if (homeScoreInt > awayScoreInt) {
+            homeTeam.classList.add('fw-bold');
+        } else if (awayScoreInt > homeScoreInt) {
+            awayTeam.classList.add('fw-bold');
+        }
+
         // Append items to list
         cardListItemOne.appendChild(homeTeam);
         cardListItemOne.appendChild(homeTeamScore);

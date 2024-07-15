@@ -18453,7 +18453,8 @@ fieldset:disabled .btn-group-vertical > .btn {
 
 .intro-teams,
 .intro-stadiums,
-.intro-groups {
+.intro-groups,
+.intro-finale-stage {
   height: 30vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -18464,7 +18465,9 @@ fieldset:disabled .btn-group-vertical > .btn {
 .intro-stadiums .title,
 .intro-stadiums .sub-title,
 .intro-groups .title,
-.intro-groups .sub-title {
+.intro-groups .sub-title,
+.intro-finale-stage .title,
+.intro-finale-stage .sub-title {
   color: white;
   text-align: center;
 }
@@ -18490,17 +18493,27 @@ fieldset:disabled .btn-group-vertical > .btn {
   font-size: 4rem;
 }
 
-.intro-groups {
-  background-image: url("/img/bridge.jpg");
+.intro-groups,
+.intro-finale-stage {
   background-position: center;
 }
-.intro-groups .title {
+.intro-groups .title,
+.intro-finale-stage .title {
   font-size: 3rem;
   text-transform: uppercase;
 }
-.intro-groups .sub-title {
+.intro-groups .sub-title,
+.intro-finale-stage .sub-title {
   font-size: 2.5rem;
   text-transform: capitalize;
+}
+
+.intro-groups {
+  background-image: url("/img/bridge.jpg");
+}
+
+.intro-finale-stage {
+  background-image: url("/img/water.jpg");
 }
 
 .group-item-icon {

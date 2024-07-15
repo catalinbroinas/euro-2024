@@ -18524,6 +18524,11 @@ fieldset:disabled .btn-group-vertical > .btn {
   margin-bottom: 1rem;
 }
 
+.avatar-team {
+  width: 45px;
+  height: 45px;
+}
+
 .card-team .card-image {
   position: relative;
   z-index: 0;

@@ -104,7 +104,7 @@
 
 // Section
 .intro {
-   background-image: url('/img/olympiaStadion_1.jpg');
+   background-image: url('/img/stadiums/olympiaStadion_1.jpg');
    display: flex;
    height: 40vh;
    background-position: center;
@@ -153,7 +153,7 @@
 }
 
 .intro-teams {
-   background-image: url('/img/grass.jpg');
+   background-image: url('/img/cover/grass.jpg');
    background-position: center;
    .title {
       font-size: 3rem;
@@ -166,7 +166,7 @@
 }
 
 .intro-stadiums {
-   background-image: url('/img/olympiaStadion.jpg');
+   background-image: url('/img/stadiums/olympiaStadion.jpg');
    background-position: bottom;
    .title {
       font-size: 4rem;
@@ -187,11 +187,11 @@
 }
 
 .intro-groups {
-   background-image: url('/img/bridge.jpg');
+   background-image: url('/img/cover/bridge.jpg');
 }
 
 .intro-finale-stage {
-   background-image: url('/img/water.jpg');
+   background-image: url('/img/cover/water.jpg');
 }
 
 // Components

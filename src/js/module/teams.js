@@ -31,7 +31,7 @@ function TeamDomHandler() {
         cardImageWrapper.setAttribute('data-mdb-ripple-color', 'light');
 
         const cardImage = document.createElement('img');
-        cardImage.src = `img/${imageSrc}`;
+        cardImage.src = `img/stadiums/${imageSrc}`;
         cardImage.classList.add('img-fluid');
         cardImage.alt = stadiumName;
 

@@ -52,7 +52,7 @@ async function HandlePageContent() {
                 // Create column for group table
                 const tableWrapper = utilityDom.createDOMElement({
                     elementTag: 'div',
-                    elementClass: ['col-ultra-5', 'col-xxxl-6', 'col-xxl-7', 'col-xl-9', 'col-lg-auto', 'col-sm-12', 'mx-auto', 'my-0'],
+                    elementClass: ['col-ultra-5', 'col-xxxl-6', 'col-xxl-7', 'col-xl-9', 'col-lg-auto', 'col-sm-12', 'mx-auto', 'mt-0', 'mb-4', 'mb-xxl-0'],
                     elementId: `group-${groupLetter}-table`
                 });
 

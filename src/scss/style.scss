@@ -194,6 +194,16 @@
    background-image: url('/img/cover/water.jpg');
 }
 
+// Section
+#finale-stage-results {
+   .sub-title::first-letter {
+      text-transform: capitalize;
+   }
+   .text {
+      text-transform: capitalize;
+   }
+}
+
 // Components
 .group-item-icon {
    background-color: $primary-2;

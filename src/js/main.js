@@ -1,7 +1,7 @@
 import { TeamDataFetcher, TeamDomHandler } from "./module/teams.js";
 import { TableDataFetcher, MatchesDataFetcher, GroupDomHandler } from './module/groups.js';
 import { FinaleStageDataFetcher, FinaleStageDomHandler } from './module/finaleStage.js';
-import { UtilityDomHandler } from "./module/utility.js";
+import { UtilityDomHandler, StringMethods } from "./module/utility.js";
 
 async function HandlePageContent() {
     // Teams
@@ -28,6 +28,7 @@ async function HandlePageContent() {
 
     // Utilities
     const utilityDom = UtilityDomHandler();
+    const utilityString = StringMethods();
 
     const displayTeams = async () => {
         if (teams && teams.length) {
@@ -113,10 +114,14 @@ async function HandlePageContent() {
             utilityDom.clearPageContent(container);
 
             finaleStageResults.forEach(round => {
+                //  Identified round id
+                const stageId = utilityString.wordsUnderlineSeparate(round.stage).toLowerCase();
+
                 // Create container for all finale stage rounds
                 const stageWrapper = utilityDom.createDOMElement({
                     elementTag: 'div',
-                    elementClass: ['row', 'row-cols-1', 'row-cols-sm-2', 'row-cols-lg-3', 'row-cols-xxl-4', 'gy-4', 'gx-5', 'mb-xl-7', 'mb-5']
+                    elementClass: ['row', 'row-cols-1', 'row-cols-sm-2', 'row-cols-lg-3', 'row-cols-xxl-4', 'gy-4', 'gx-5', 'mb-xl-7', 'mb-5'],
+                    elementId: stageId
                 });
 
                 // Create title for all finale stage rounds and divider under title

@@ -127,15 +127,15 @@ async function HandlePageContent() {
                 });
 
                 const divider = utilityDom.createDOMElement({
-                    elementAttributes: 'hr',
+                    elementTag: 'hr',
                     elementClass: ['hr', 'hr-blurry', 'mt-0', 'mb-4', 'w-100']
                 });
 
-                stageWrapper.appendChild(stageWrapper);
+                stageWrapper.appendChild(stageTitle);
                 stageWrapper.appendChild(divider);
 
-                round.forEach(match => {
-                    finaleStageDom.displayMatches(match, stageWrapper);
+                round.matches.forEach(match => {
+                    finaleStageDom.displayMatches([match], stageWrapper);
                 });
 
                 container.appendChild(stageWrapper);
@@ -150,6 +150,7 @@ async function HandlePageContent() {
 
 document.addEventListener('DOMContentLoaded', async () => {
     const domManager = await HandlePageContent();
+
     if (location.pathname.endsWith('teams.html')) {
         try {
             domManager.displayTeams();
@@ -157,9 +158,18 @@ document.addEventListener('DOMContentLoaded', async () => {
             console.error('Error initializing the DOM handler:', err);
         }
     }
+
     if (location.pathname.endsWith('groupStage.html')) {
         try {
             domManager.displayGroups();
+        } catch (err) {
+            console.error('Error initializing the DOM handler:', err);
+        }
+    }
+
+    if (location.pathname.endsWith('finaleStage.html')) {
+        try {
+            domManager.displayFinaleStage();
         } catch (err) {
             console.error('Error initializing the DOM handler:', err);
         }

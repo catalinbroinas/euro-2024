@@ -1,7 +1,7 @@
 [
   {
     "stage": "Round of 16",
-    "results": [
+    "matches": [
       {
         "homeFlag": "switzerland.png",
         "awayFlag": "italy.png",
@@ -26,7 +26,7 @@
   },
   {
     "stage": "Quarter finals",
-    "results": [
+    "matches": [
       {
         "homeFlag": "spain.png",
         "awayFlag": "germany.png",

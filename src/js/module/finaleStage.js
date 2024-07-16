@@ -48,7 +48,7 @@ function FinaleStageDomHandler() {
         });
         const listGroup = utilityDom.createDOMElement({
             elementTag: 'ul',
-            elementClass: ['list-group-item', 'd-flex', 'justify-content-between', 'align-items-center']
+            elementClass: ['list-group', 'list-group-light', 'list-group-small']
         });
 
         // Home Team Item
@@ -64,7 +64,7 @@ function FinaleStageDomHandler() {
             elementTag: 'img',
             elementClass: ['me-4', 'avatar-team'],
             elementAttributes: {
-                src: homeFlag,
+                src: `/img/flags/${homeFlag}`,
                 alt: `${homeTeam} flag`
             }
         });
@@ -97,7 +97,7 @@ function FinaleStageDomHandler() {
             elementTag: 'img',
             elementClass: ['me-4', 'avatar-team'],
             elementAttributes: {
-                src: awayFlag,
+                src: `/img/flags/${awayFlag}`,
                 alt: `${awayTeam} flag`
             }
         });
@@ -160,10 +160,10 @@ function FinaleStageDomHandler() {
         });
 
         refereeInfo.appendChild(refereeIcon);
-        refereeInfo.textContent += referee;
+        refereeInfo.insertAdjacentHTML('beforeend', `${referee}`);
 
         stadiumInfo.appendChild(stadiumIcon);
-        stadiumInfo.textContent += stadium;
+        stadiumInfo.insertAdjacentHTML('beforeend', `${stadium}`);
 
         cardFooter.appendChild(refereeInfo);
         cardFooter.appendChild(stadiumInfo);

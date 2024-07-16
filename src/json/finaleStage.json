@@ -21,6 +21,66 @@
         "awayScore": "0",
         "referee": "M. Oliver",
         "stadium": "Signal Iduna Park"
+      },
+      {
+        "homeFlag": "england.png",
+        "awayFlag": "slovakia.png",
+        "homeTeam": "england",
+        "awayTeam": "slovakia",
+        "homeScore": "2",
+        "awayScore": "1",
+        "referee": "H. U. Meler",
+        "stadium": "Veltins Arena"
+      },
+      {
+        "homeFlag": "spain.png",
+        "awayFlag": "georgia.png",
+        "homeTeam": "spain",
+        "awayTeam": "georgia",
+        "homeScore": "4",
+        "awayScore": "1",
+        "referee": "F. Letexier",
+        "stadium": "RheinEnergieStadion"
+      },
+      {
+        "homeFlag": "france.png",
+        "awayFlag": "belgium.png",
+        "homeTeam": "france",
+        "awayTeam": "belgium",
+        "homeScore": "1",
+        "awayScore": "0",
+        "referee": "G. Nyberg",
+        "stadium": "Merkur Spiel-Arena"
+      },
+      {
+        "homeFlag": "portugal.png",
+        "awayFlag": "slovenia.png",
+        "homeTeam": "portugal",
+        "awayTeam": "slovenia",
+        "homeScore": "1",
+        "awayScore": "0",
+        "referee": "D. Orsato",
+        "stadium": "Deutsche Bank Park"
+      },
+      {
+        "homeFlag": "romania.png",
+        "awayFlag": "netherlands.png",
+        "homeTeam": "romania",
+        "awayTeam": "netherlands",
+        "homeScore": "0",
+        "awayScore": "3",
+        "referee": "F. Zwayer",
+        "stadium": "Allianz Arena"
+      },
+      {
+        "homeFlag": "austria.png",
+        "awayFlag": "Turkey.png",
+        "homeTeam": "austria",
+        "awayTeam": "Turkey",
+        "homeScore": "1",
+        "awayScore": "2",
+        "referee": "Soares Dias ",
+        "stadium": "Red Bull Arena"
       }
     ]
   },
@@ -46,6 +106,66 @@
         "awayScore": "1",
         "referee": "M. Oliver",
         "stadium": "Volksparkstadion"
+      },
+      {
+        "homeFlag": "england.png",
+        "awayFlag": "switzerland.png",
+        "homeTeam": "england",
+        "awayTeam": "switzerland",
+        "homeScore": "2",
+        "awayScore": "1",
+        "referee": "D. Orsato",
+        "stadium": "Merkur Spiel-Arena"
+      },
+      {
+        "homeFlag": "netherlands.png",
+        "awayFlag": "turkey.png",
+        "homeTeam": "netherlands",
+        "awayTeam": "turkey",
+        "homeScore": "2",
+        "awayScore": "1",
+        "referee": "C. Turpin",
+        "stadium": "Olympiastadion"
+      }
+    ]
+  },
+  {
+    "stage": "Semi finals",
+    "matches": [
+      {
+        "homeFlag": "spain.png",
+        "awayFlag": "france.png",
+        "homeTeam": "spain",
+        "awayTeam": "france",
+        "homeScore": "2",
+        "awayScore": "1",
+        "referee": "S. Vincic",
+        "stadium": "Allianz Arena"
+      },
+      {
+        "homeFlag": "netherlands.png",
+        "awayFlag": "england.png",
+        "homeTeam": "netherlands",
+        "awayTeam": "england",
+        "homeScore": "1",
+        "awayScore": "2",
+        "referee": "F. Zwayer",
+        "stadium": "Signal Iduna Park"
+      }
+    ]
+  },
+  {
+    "stage": "Final",
+    "matches": [
+      {
+        "homeFlag": "spain.png",
+        "awayFlag": "england.png",
+        "homeTeam": "spain",
+        "awayTeam": "england",
+        "homeScore": "2",
+        "awayScore": "1",
+        "referee": "F. Letexier",
+        "stadium": "Olympiastadion"
       }
     ]
   }

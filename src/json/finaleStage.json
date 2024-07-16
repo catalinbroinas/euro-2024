@@ -1,0 +1,52 @@
+[
+  {
+    "stage": "Round of 16",
+    "results": [
+      {
+        "homeFlag": "switzerland.png",
+        "awayFlag": "italy.png",
+        "homeTeam": "Switzerland",
+        "awayTeam": "Italy",
+        "homeScore": "2",
+        "awayScore": "0",
+        "referee": "S. Marciniak",
+        "stadium": "Olympiastadion"
+      },
+      {
+        "homeFlag": "germany.png",
+        "awayFlag": "denmark.png",
+        "homeTeam": "Germany",
+        "awayTeam": "Denmark",
+        "homeScore": "2",
+        "awayScore": "0",
+        "referee": "M. Oliver",
+        "stadium": "Signal Iduna Park"
+      }
+    ]
+  },
+  {
+    "stage": "Quarter finals",
+    "results": [
+      {
+        "homeFlag": "spain.png",
+        "awayFlag": "germany.png",
+        "homeTeam": "Spain",
+        "awayTeam": "Germany",
+        "homeScore": "2",
+        "awayScore": "1",
+        "referee": "A. Taylor",
+        "stadium": "MHPArena"
+      },
+      {
+        "homeFlag": "portugal.png",
+        "awayFlag": "france.png",
+        "homeTeam": "Portugal",
+        "awayTeam": "France",
+        "homeScore": "0",
+        "awayScore": "1",
+        "referee": "M. Oliver",
+        "stadium": "Volksparkstadion"
+      }
+    ]
+  }
+]

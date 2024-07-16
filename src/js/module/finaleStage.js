@@ -172,6 +172,31 @@ function FinaleStageDomHandler() {
 
         return card;
     };
+
+    const displayMatches = (results, container) => {
+        results.forEach(result => {
+            const cardWrapper = utilityDom.createDOMElement({
+                elementTag: 'div',
+                elementClass: ['col']
+            });
+
+            const card = createMatch({
+                homeFlag: result.homeFlag,
+                awayFlag: result.awayFlag,
+                homeTeam: result.homeTeam,
+                awayTeam: result.awayTeam,
+                homeScore: result.homeScore,
+                awayScore: result.awayScore,
+                referee: result.referee,
+                stadium: result.stadium
+            });
+
+            cardWrapper.appendChild(card);
+            container.appendChild(cardWrapper);
+        });
+    };
+
+    return { displayMatches };
 }
 
 export { FinaleStageDataFetcher, FinaleStageDomHandler };

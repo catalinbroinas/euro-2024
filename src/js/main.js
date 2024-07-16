@@ -1,5 +1,6 @@
 import { TeamDataFetcher, TeamDomHandler } from "./module/teams.js";
 import { TableDataFetcher, MatchesDataFetcher, GroupDomHandler } from './module/groups.js';
+import { FinaleStageDataFetcher, FinaleStageDomHandler } from './module/finaleStage.js';
 import { UtilityDomHandler } from "./module/utility.js";
 
 async function HandlePageContent() {
@@ -18,6 +19,12 @@ async function HandlePageContent() {
     // Groups results
     const groupMatches = await MatchesDataFetcher();
     const results = await groupMatches.getResults();
+
+    // Finale stage
+    const finaleStageDom = FinaleStageDomHandler();
+
+    const finaleStageData = await FinaleStageDataFetcher();
+    const finaleStageResults = await finaleStageData.getResults();
 
     // Utilities
     const utilityDom = UtilityDomHandler();
@@ -99,7 +106,46 @@ async function HandlePageContent() {
         }
     };
 
-    return { displayTeams, displayGroups };
+    const displayFinaleStage = async () => {
+        if (finaleStageResults && finaleStageResults.length) {
+            // Get finale stage container and clean
+            const container = document.querySelector('#finale-stage-results');
+            utilityDom.clearPageContent(container);
+
+            finaleStageResults.forEach(round => {
+                // Create container for all finale stage rounds
+                const stageWrapper = utilityDom.createDOMElement({
+                    elementTag: 'div',
+                    elementClass: ['row', 'row-cols-1', 'row-cols-sm-2', 'row-cols-lg-3', 'row-cols-xxl-4', 'gy-4', 'gx-5', 'mb-xl-7', 'mb-5']
+                });
+
+                // Create title for all finale stage rounds and divider under title
+                const stageTitle = utilityDom.createDOMElement({
+                    elementTag: 'h2',
+                    elementClass: ['sub-title', 'text-center', 'mb-3', 'w-100'],
+                    elementText: round.stage
+                });
+
+                const divider = utilityDom.createDOMElement({
+                    elementAttributes: 'hr',
+                    elementClass: ['hr', 'hr-blurry', 'mt-0', 'mb-4', 'w-100']
+                });
+
+                stageWrapper.appendChild(stageWrapper);
+                stageWrapper.appendChild(divider);
+
+                round.forEach(match => {
+                    finaleStageDom.displayMatches(match, stageWrapper);
+                });
+
+                container.appendChild(stageWrapper);
+            });
+        } else {
+            console.warn('No finale stage data available.');
+        }
+    };
+
+    return { displayTeams, displayGroups, displayFinaleStage };
 }
 
 document.addEventListener('DOMContentLoaded', async () => {

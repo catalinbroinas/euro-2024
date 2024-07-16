@@ -55,4 +55,13 @@ function UtilityDomHandler() {
     };
 }
 
-export { UtilityDomHandler };
+function StringMethods() {
+    const wordsUnderlineSeparate = (str) => {
+        const array = str.trim().split(/\s+/);
+        return array.join('-');
+    };
+
+    return { wordsUnderlineSeparate };
+}
+
+export { UtilityDomHandler, StringMethods };

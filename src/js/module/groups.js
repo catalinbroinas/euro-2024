@@ -90,8 +90,9 @@ function GroupDomHandler() {
                         const iconElement = utilityDom.createDOMElement({
                             elementTag: 'i',
                             elementClass: icon.class ? icon.class : [],
-                            elementAtrType: 'title',
-                            elementAtrValue: icon.title
+                            elementAttributes: {
+                                title: icon.title
+                            }
                         });
                         td.appendChild(iconElement);
                     });

@@ -13,8 +13,7 @@ function UtilityDomHandler() {
         elementId,
         elementText,
         elementScope,
-        elementAtrType,
-        elementAtrValue,
+        elementAttributes,
         clickHandler
     }) => {
         const element = document.createElement(elementTag);
@@ -33,8 +32,10 @@ function UtilityDomHandler() {
             element.setAttribute('scope', elementScope);
         }
 
-        if (elementAtrType) {
-            element.setAttribute(elementAtrType, elementAtrValue);
+        if (elementAttributes) {
+            for (const [key, value] of Object.entries(elementAttributes)) {
+                element.setAttribute(key, value);
+            }
         }
 
         if (elementText) {

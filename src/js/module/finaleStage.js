@@ -58,11 +58,11 @@ function FinaleStageDomHandler() {
         });
         const homeTeamDiv = utilityDom.createDOMElement({
             elementTag: 'div',
-            elementClass: 'd-flex align-items-center'
+            elementClass: ['d-flex', 'align-items-center']
         });
         const homeTeamImg = utilityDom.createDOMElement({
             elementTag: 'img',
-            elementClass: 'me-4 avatar-team',
+            elementClass: ['me-4', 'avatar-team'],
             elementAttributes: {
                 src: homeFlag,
                 alt: `${homeTeam} flag`
@@ -75,7 +75,7 @@ function FinaleStageDomHandler() {
         });
         const homeScoreText = utilityDom.createDOMElement({
             elementTag: 'h5',
-            elementClass: 'title m-0',
+            elementClass: ['title', 'm-0'],
             elementText: homeScore
         });
 
@@ -91,11 +91,11 @@ function FinaleStageDomHandler() {
         });
         const awayTeamDiv = utilityDom.createDOMElement({
             elementTag: 'div',
-            elementClass: 'd-flex align-items-center'
+            elementClass: ['d-flex', 'align-items-center']
         });
         const awayTeamImg = utilityDom.createDOMElement({
             elementTag: 'img',
-            elementClass: 'me-4 avatar-team',
+            elementClass: ['me-4', 'avatar-team'],
             elementAttributes: {
                 src: awayFlag,
                 alt: `${awayTeam} flag`
@@ -103,14 +103,23 @@ function FinaleStageDomHandler() {
         });
         const awayTeamText = utilityDom.createDOMElement({
             elementTag: 'h5',
-            elementClass: 'text m-0',
+            elementClass: ['text', 'm-0'],
             elementText: awayTeam
         });
         const awayScoreText = utilityDom.createDOMElement({
             elementTag: 'h5',
-            elementClass: 'title m-0',
+            elementClass: ['title', 'm-0'],
             elementText: awayScore
         });
+
+        // Determine the winning team and apply bold class
+        const homeScoreInt = parseInt(homeScore);
+        const awayScoreInt = parseInt(awayScore);
+        if (homeScoreInt > awayScoreInt) {
+            homeTeamText.classList.add('fw-bold');
+        } else if (awayScoreInt > homeScoreInt) {
+            awayTeamText.classList.add('fw-bold');
+        }
 
         awayTeamDiv.appendChild(awayTeamImg);
         awayTeamDiv.appendChild(awayTeamText);
@@ -124,7 +133,7 @@ function FinaleStageDomHandler() {
         // Card footer
         const refereeInfo = utilityDom.createDOMElement({
             elementTag: 'h6',
-            elementClass: 'text small m-0',
+            elementClass: ['text', 'small', 'm-0']
         });
         const refereeIcon = utilityDom.createDOMElement({
             elementTag: 'i',
@@ -138,7 +147,7 @@ function FinaleStageDomHandler() {
 
         const stadiumInfo = utilityDom.createDOMElement({
             elementTag: 'h6',
-            elementClass: 'text small m-0',
+            elementClass: ['text', 'small', 'm-0'],
         });
         const stadiumIcon = utilityDom.createDOMElement({
             elementTag: 'i',

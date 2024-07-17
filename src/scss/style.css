@@ -18552,6 +18552,12 @@ fieldset:disabled .btn-group-vertical > .btn {
   height: 45px;
 }
 
+.stadium-wrapper .stadium-wrapper-content {
+  position: relative;
+  z-index: 2;
+  margin-left: -14%;
+}
+
 .card-team .card-image {
   position: relative;
   z-index: 0;
@@ -18570,6 +18576,10 @@ fieldset:disabled .btn-group-vertical > .btn {
   border: none;
 }
 
+.card-stadium {
+  border-radius: 0.75rem;
+}
+
 .table-group {
   background-color: white;
   padding: 2rem 3rem;
@@ -18577,4 +18587,23 @@ fieldset:disabled .btn-group-vertical > .btn {
 
 .mask-dark {
   background-color: rgba(0, 0, 0, 0.25);
+}
+
+@media only screen and (max-width: 575px) {
+  .stadium-wrapper .stadium-wrapper-content {
+    margin-left: 0;
+  }
+  .stadium-wrapper .stadium-wrapper-image {
+    margin-bottom: -14%;
+  }
+  .stadium-wrapper .card-stadium {
+    border-radius: 0%;
+    background: hsla(0, 0%, 100%, 0.55);
+    -webkit-backdrop-filter: blur(30px);
+            backdrop-filter: blur(30px);
+  }
+  .stadium-wrapper .list-group,
+  .stadium-wrapper .list-group-item {
+    background-color: transparent;
+  }
 }/*# sourceMappingURL=style.css.map */

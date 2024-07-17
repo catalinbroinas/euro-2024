@@ -18522,6 +18522,10 @@ fieldset:disabled .btn-group-vertical > .btn {
 #finale-stage-results .text {
   text-transform: capitalize;
 }
+#finale-stage-results #semi-finals,
+#finale-stage-results #final {
+  justify-content: center;
+}
 
 .group-item-icon {
   background-color: #2962FF;

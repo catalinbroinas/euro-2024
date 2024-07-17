@@ -113,7 +113,7 @@ async function HandlePageContent() {
             const container = document.querySelector('#finale-stage-results');
             utilityDom.clearPageContent(container);
 
-            finaleStageResults.forEach(round => {
+            finaleStageResults.forEach((round, index) => {
                 //  Identified round id
                 const stageId = utilityString.wordsUnderlineSeparate(round.stage).toLowerCase();
 
@@ -142,6 +142,11 @@ async function HandlePageContent() {
                 round.matches.forEach(match => {
                     finaleStageDom.displayMatches([match], stageWrapper);
                 });
+
+                if (index === finaleStageResults.length - 1) {
+                    stageWrapper.classList.remove('mb-xl-7');
+                    stageWrapper.classList.remove('mb-5');
+                }
 
                 container.appendChild(stageWrapper);
             });

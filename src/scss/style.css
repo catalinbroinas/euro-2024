@@ -18516,6 +18516,18 @@ fieldset:disabled .btn-group-vertical > .btn {
   background-image: url("/img/cover/water.jpg");
 }
 
+#finale-stage-results .card-body {
+  position: relative;
+}
+#finale-stage-results .match-notice {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 82%;
+}
+#finale-stage-results .match-notice::first-letter {
+  text-transform: uppercase;
+}
 #finale-stage-results .sub-title::first-letter {
   text-transform: capitalize;
 }

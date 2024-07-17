@@ -196,6 +196,18 @@
 
 // Section
 #finale-stage-results {
+   .card-body {
+      position: relative;
+   }
+   .match-notice {
+      position: absolute;
+      z-index: 3;
+      left: 50%;
+      bottom: 82%;
+   }
+   .match-notice::first-letter {
+      text-transform: uppercase;
+   }
    .sub-title::first-letter {
       text-transform: capitalize;
    }

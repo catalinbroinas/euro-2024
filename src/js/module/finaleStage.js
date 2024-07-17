@@ -31,7 +31,8 @@ function FinaleStageDomHandler() {
         homeScore,
         awayScore,
         referee,
-        stadium
+        stadium,
+        extraTime
     }) => {
         // Card structure
         const card = utilityDom.createDOMElement({
@@ -112,6 +113,11 @@ function FinaleStageDomHandler() {
             elementText: awayScore
         });
 
+        awayTeamDiv.appendChild(awayTeamImg);
+        awayTeamDiv.appendChild(awayTeamText);
+        awayItem.appendChild(awayTeamDiv);
+        awayItem.appendChild(awayScoreText);
+
         // Determine the winning team and apply bold class
         const homeScoreInt = parseInt(homeScore);
         const awayScoreInt = parseInt(awayScore);
@@ -121,10 +127,14 @@ function FinaleStageDomHandler() {
             awayTeamText.classList.add('fw-bold');
         }
 
-        awayTeamDiv.appendChild(awayTeamImg);
-        awayTeamDiv.appendChild(awayTeamText);
-        awayItem.appendChild(awayTeamDiv);
-        awayItem.appendChild(awayScoreText);
+        if (extraTime) {
+            const extraTimeItem = utilityDom.createDOMElement({
+                elementTag: 'span',
+                elementClass: ['match-notice'],
+                elementText: extraTime
+            });
+            listGroup.appendChild(extraTimeItem);
+        }
 
         listGroup.appendChild(homeItem);
         listGroup.appendChild(awayItem);
@@ -188,7 +198,8 @@ function FinaleStageDomHandler() {
                 homeScore: result.homeScore,
                 awayScore: result.awayScore,
                 referee: result.referee,
-                stadium: result.stadium
+                stadium: result.stadium,
+                extraTime: result.extraTime
             });
 
             cardWrapper.appendChild(card);

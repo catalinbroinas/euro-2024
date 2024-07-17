@@ -30,7 +30,8 @@
         "homeScore": "2",
         "awayScore": "1",
         "referee": "H. U. Meler",
-        "stadium": "Veltins Arena"
+        "stadium": "Veltins Arena",
+        "extraTime": "extra time"
       },
       {
         "homeFlag": "spain.png",
@@ -60,7 +61,8 @@
         "homeScore": "1",
         "awayScore": "0",
         "referee": "D. Orsato",
-        "stadium": "Deutsche Bank Park"
+        "stadium": "Deutsche Bank Park",
+        "extraTime": "penalties"
       },
       {
         "homeFlag": "romania.png",
@@ -95,7 +97,8 @@
         "homeScore": "2",
         "awayScore": "1",
         "referee": "A. Taylor",
-        "stadium": "MHPArena"
+        "stadium": "MHPArena",
+        "extraTime": "extra time"
       },
       {
         "homeFlag": "portugal.png",
@@ -105,7 +108,8 @@
         "homeScore": "0",
         "awayScore": "1",
         "referee": "M. Oliver",
-        "stadium": "Volksparkstadion"
+        "stadium": "Volksparkstadion",
+        "extraTime": "penalties"
       },
       {
         "homeFlag": "england.png",
@@ -115,7 +119,8 @@
         "homeScore": "2",
         "awayScore": "1",
         "referee": "D. Orsato",
-        "stadium": "Merkur Spiel-Arena"
+        "stadium": "Merkur Spiel-Arena",
+        "extraTime": "penalties"
       },
       {
         "homeFlag": "netherlands.png",

@@ -1,4 +1,5 @@
 import { TeamDataFetcher, TeamDomHandler } from "./module/teams.js";
+import { StadiumDataFetcher, StadiumDomHandler } from "./module/stadiums.js";
 import { TableDataFetcher, MatchesDataFetcher, GroupDomHandler } from './module/groups.js';
 import { FinaleStageDataFetcher, FinaleStageDomHandler } from './module/finaleStage.js';
 import { UtilityDomHandler, StringMethods } from "./module/utility.js";
@@ -8,6 +9,11 @@ async function HandlePageContent() {
     const teamData = await TeamDataFetcher();
     const teams = await teamData.getTeams();
     const teamDom = TeamDomHandler();
+
+    // Stadium
+    const stadiumData = await StadiumDataFetcher();
+    const stadiums = await stadiumData.getStadiums();
+    const stadiumDom = StadiumDomHandler();
 
     // Groups
     const groupDom = GroupDomHandler();
@@ -37,6 +43,16 @@ async function HandlePageContent() {
             teamDom.displayCards(teams, container);
         } else {
             console.warn('No teams data available.');
+        }
+    };
+
+    const displayStadiums = async () => {
+        if (stadiums && stadiums.length) {
+            const container = document.querySelector('#stadiums');
+            utilityDom.clearPageContent(container);
+            stadiumDom.displayStadiums(stadiums, container);
+        } else {
+            console.warn('No stadiums data available.');
         }
     };
 
@@ -155,7 +171,12 @@ async function HandlePageContent() {
         }
     };
 
-    return { displayTeams, displayGroups, displayFinaleStage };
+    return {
+        displayTeams,
+        displayGroups,
+        displayFinaleStage,
+        displayStadiums
+    };
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -164,6 +185,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (location.pathname.endsWith('teams.html')) {
         try {
             domManager.displayTeams();
+        } catch (err) {
+            console.error('Error initializing the DOM handler:', err);
+        }
+    }
+
+    if (location.pathname.endsWith('stadiums.html')) {
+        try {
+            domManager.displayStadiums();
         } catch (err) {
             console.error('Error initializing the DOM handler:', err);
         }

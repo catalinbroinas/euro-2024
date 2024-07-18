@@ -1,0 +1,16 @@
+[
+  {
+    "image": "olympiaStadion.jpg",
+    "name": "Olympiastadion",
+    "city": "Berlin",
+    "team": "Hertha Berlin",
+    "capacity": "71.000"
+  },
+  {
+    "image": "allianzArena.jpg",
+    "name": "Allianz Arena",
+    "city": "Munich",
+    "team": "Bayern Munchen",
+    "capacity": "66.000"
+  }
+]

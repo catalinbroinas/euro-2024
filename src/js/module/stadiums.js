@@ -22,7 +22,34 @@ async function StadiumDataFetcher() {
 }
 
 function StadiumDomHandler() {
-    const utilityDom = UtilityDomHandler()
+    const utilityDom = UtilityDomHandler();
+
+    // Function to create list items with icon and text
+    const createListItem = (icon, tooltip, text) => {
+        const item = utilityDom.createDOMElement({
+            elementTag: 'li',
+            elementClass: ['list-group-item']
+        });
+        const element = utilityDom.createDOMElement({
+            elementTag: 'p',
+            elementClass: ['text', 'm-0']
+        });
+        const iconElement = utilityDom.createDOMElement({
+            elementTag: 'i',
+            elementClass: ['fas', `${icon}`, 'fa-lg', 'fa-fw', 'me-4'],
+            elementAttributes: {
+                'data-mdb-toggle': 'tooltip',
+                'data-mdb-placement': 'left',
+                title: `${tooltip}`
+            }
+        });
+
+        element.appendChild(iconElement);
+        element.insertAdjacentHTML('beforeend', `${text}`);
+        item.appendChild(element);
+
+        return item;
+    };
 
     const createStadium = ({
         image,
@@ -31,16 +58,6 @@ function StadiumDomHandler() {
         team,
         capacity
     }) => {
-        // Define class and attributes for icon
-        let icon = 'fa-location-dot';
-        const iconClass = ['fas', `${icon}`, 'fa-lg', 'fa-fw', 'me-4'];
-        let tooltip = 'City';
-        const iconAttributes = {
-            'data-mdb-toggle': 'tooltip',
-            'data-mdb-placement': 'left',
-            title: `${tooltip}`
-        };
-
         // Create grid
         const stadiumWrapper = utilityDom.createDOMElement({
             elementTag: 'div',
@@ -86,71 +103,10 @@ function StadiumDomHandler() {
             elementText: name ? name : 'Stadium'
         });
 
-        // Create city item
-        const cityItem = utilityDom.createDOMElement({
-            elementTag: 'li',
-            elementClass: ['list-group-item']
-        });
-        const cityElement = utilityDom.createDOMElement({
-            elementTag: 'p',
-            elementClass: ['text', 'm-0']
-        });
-        const cityIcon = utilityDom.createDOMElement({
-            elementTag: 'i',
-            elementClass: iconClass,
-            elementAttributes: iconAttributes
-        });
-
-        // Add icon and text to element
-        cityElement.appendChild(cityIcon);
-        cityElement.insertAdjacentHTML('beforeend', `${city}`);
-        cityItem.appendChild(cityElement);
-
-        // Create team item
-        icon = 'fa-futbol';
-        tooltip = 'Home team';
-
-        const teamItem = utilityDom.createDOMElement({
-            elementTag: 'li',
-            elementClass: ['list-group-item']
-        });
-        const teamElement = utilityDom.createDOMElement({
-            elementTag: 'p',
-            elementClass: ['text', 'm-0']
-        });
-        const teamIcon = utilityDom.createDOMElement({
-            elementTag: 'i',
-            elementClass: iconClass,
-            elementAttributes: iconAttributes
-        });
-
-        // Add icon and text to element
-        teamElement.appendChild(teamIcon);
-        teamElement.insertAdjacentHTML('beforeend', `${team}`);
-        teamItem.appendChild(teamElement);
-
-        // Create capacity item
-        icon = 'fa-users';
-        tooltip = 'Stadium capacity';
-
-        const capacityItem = utilityDom.createDOMElement({
-            elementTag: 'li',
-            elementClass: ['list-group-item']
-        });
-        const capacityElement = utilityDom.createDOMElement({
-            elementTag: 'p',
-            elementClass: ['text', 'm-0']
-        });
-        const capacityIcon = utilityDom.createDOMElement({
-            elementTag: 'i',
-            elementClass: iconClass,
-            elementAttributes: iconAttributes
-        });
-
-        // Add icon and text to element
-        capacityElement.appendChild(capacityIcon);
-        capacityElement.insertAdjacentHTML('beforeend', `${capacity}`);
-        capacityItem.appendChild(capacityElement);
+        // Create list items
+        const cityItem = createListItem('fa-location-dot', 'City', city);
+        const teamItem = createListItem('fa-futbol', 'Home team', team);
+        const capacityItem = createListItem('fa-users', 'Stadium capacity', capacity);
 
         // Add items to list
         cardList.appendChild(cityItem);

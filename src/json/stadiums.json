@@ -12,5 +12,61 @@
     "city": "Munich",
     "team": "Bayern Munchen",
     "capacity": "66.000"
+  },
+  {
+    "image": "signalIdunaPark.jpg",
+    "name": "Signal Iduna Park",
+    "city": "Dortmund",
+    "team": "Borussia Dortmund",
+    "capacity": "62.000"
+  },
+  {
+    "image": "mphArena.jpg",
+    "name": "MHPArena",
+    "city": "Stuttgart",
+    "team": "VfB Stuttgart",
+    "capacity": "51.000"
+  },
+  {
+    "image": "volksparkstadion.jpg",
+    "name": "Volksparkstadion",
+    "city": "Hamburg",
+    "team": "Hamburger SV",
+    "capacity": "49.000"
+  },
+  {
+    "image": "düsseldorfArena.jpg",
+    "name": "Merkur Spiel-Arena",
+    "city": "Dusseldorf",
+    "team": "Fortuna Düsseldorf",
+    "capacity": "47.000"
+  },
+  {
+    "image": "aufSchalke.jpg",
+    "name": "Veltins Arena",
+    "city": "Gelsenkirchen",
+    "team": "Schalke 04",
+    "capacity": "50.000"
+  },
+  {
+    "image": "frankfurtArena.jpg",
+    "name": "Deutsche Bank Park",
+    "city": "Frankfurt",
+    "team": "Eintracht Frankfurt",
+    "capacity": "47.000"
+  },
+  {
+    "image": "redBullArena.jpg",
+    "name": "Red Bull Arena",
+    "city": "Leipzig",
+    "team": "RB Leipzig",
+    "capacity": "40.000"
+  },
+  {
+    "image": "rheinEnergieStadion.jpg",
+    "name": "RheinEnergieStadion",
+    "city": "Cologne",
+    "team": "FC Köln",
+    "capacity": "43.000"
   }
 ]

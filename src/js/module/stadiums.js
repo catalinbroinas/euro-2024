@@ -89,17 +89,17 @@ function StadiumDomHandler() {
         });
         const cardBody = utilityDom.createDOMElement({
             elementTag: 'div',
-            elementClass: ['card-body', 'py-sm-4', 'py-3', 'px-5']
+            elementClass: ['card-body', 'py-sm-4', 'py-3', 'px-0']
         });
         const cardList = utilityDom.createDOMElement({
             elementTag: 'ul',
-            elementClass: ['list-group', 'list-group-light']
+            elementClass: ['list-group', 'list-group-light', 'px-5']
         });
 
         // Create card title
         const cardTitle = utilityDom.createDOMElement({
             elementTag: 'h5',
-            elementClass: ['sub-title', 'text-center', 'mt-0', 'mb-2'],
+            elementClass: ['sub-title', 'text-center', 'mt-0', 'mb-2', 'px-3'],
             elementText: name ? name : 'Stadium'
         });
 

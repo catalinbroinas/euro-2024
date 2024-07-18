@@ -129,6 +129,28 @@ function StadiumDomHandler() {
 
         return stadiumWrapper;
     };
+
+    const displayStadiums = (stadiums, container) => {
+        stadiums.forEach(stadium => {
+            const stadiumWrapper = utilityDom.createDOMElement({
+                elementTag: 'div',
+                elementClass: ['col']
+            });
+
+            const stadiumCardWrapper = createStadium({
+                image: stadium.image,
+                name: stadium.name,
+                city: stadium.city,
+                team: stadium.team,
+                capacity: stadium.capacity
+            });
+
+            stadiumWrapper.appendChild(stadiumCardWrapper);
+            container.appendChild(stadiumWrapper);
+        });
+    };
+
+    return { displayStadiums };
 }
 
 export { StadiumDataFetcher, StadiumDomHandler };

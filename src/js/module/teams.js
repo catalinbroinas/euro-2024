@@ -8,7 +8,8 @@ async function TeamDataFetcher() {
             const teams = await response.json();
             return teams;
         } catch (err) {
-            console.error('There has been a problem with your fetch operation:', err)
+            console.error('There has been a problem with your fetch operation:', err);
+            return [];
         }
     };
 

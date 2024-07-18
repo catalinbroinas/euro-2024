@@ -13,6 +13,7 @@ async function fetchData(url, errorMessage) {
         return data;
     } catch (err) {
         console.error('There has been a problem with your fetch operation:', err);
+        return [];
     }
 }
 

@@ -73,7 +73,7 @@ function StadiumDomHandler() {
         });
 
         // Create image element
-        const imageElement = UtilityDomHandler.createDOMElement({
+        const imageElement = utilityDom.createDOMElement({
             elementTag: 'img',
             elementAttributes: {
                 src: `/img/stadiums/${image}`,

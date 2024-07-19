@@ -49,9 +49,39 @@ function UtilityDomHandler() {
         return element;
     };
 
+    // Scroll page to top
+    const scrollToTop = (button) => {
+        // Check if the button exists
+        if (!button) {
+            console.warn('Scroll button element not found.');
+            return;
+        }
+
+        // Default no display button
+        button.style.display = 'none';
+
+        // Display button after scrolling 350px
+        window.addEventListener('scroll', () => {
+            if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+                button.style.display = 'block';
+            } else {
+                button.style.display = 'none';
+            }
+        });
+
+        // Scroll to top
+        button.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    };
+
     return {
         clearPageContent,
-        createDOMElement
+        createDOMElement,
+        scrollToTop
     };
 }
 

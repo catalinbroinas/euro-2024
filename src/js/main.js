@@ -171,16 +171,24 @@ async function HandlePageContent() {
         }
     };
 
+    const scrollPage = () => {
+        const scrollButton = document.querySelector('#scroll-button');
+        utilityDom.scrollToTop(scrollButton);
+    };
+
     return {
         displayTeams,
         displayGroups,
         displayFinaleStage,
-        displayStadiums
+        displayStadiums,
+        scrollPage
     };
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
     const domManager = await HandlePageContent();
+
+    domManager.scrollPage();
 
     if (location.pathname.endsWith('teams.html')) {
         try {

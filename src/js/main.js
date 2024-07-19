@@ -187,38 +187,22 @@ async function HandlePageContent() {
 
 document.addEventListener('DOMContentLoaded', async () => {
     const domManager = await HandlePageContent();
-
     domManager.scrollPage();
 
-    if (location.pathname.endsWith('teams.html')) {
-        try {
-            domManager.displayTeams();
-        } catch (err) {
-            console.error('Error initializing the DOM handler:', err);
-        }
-    }
+    const pageHandlers = {
+        'teams.html': domManager.displayTeams,
+        'stadiums.html': domManager.displayStadiums,
+        'groupStage.html': domManager.displayGroups,
+        'finaleStage.html': domManager.displayFinaleStage,
+    };
 
-    if (location.pathname.endsWith('stadiums.html')) {
-        try {
-            domManager.displayStadiums();
-        } catch (err) {
-            console.error('Error initializing the DOM handler:', err);
-        }
-    }
+    const currentPage = Object.keys(pageHandlers).find(page => location.pathname.endsWith(page));
 
-    if (location.pathname.endsWith('groupStage.html')) {
+    if (currentPage) {
         try {
-            domManager.displayGroups();
+            pageHandlers[currentPage]();
         } catch (err) {
-            console.error('Error initializing the DOM handler:', err);
-        }
-    }
-
-    if (location.pathname.endsWith('finaleStage.html')) {
-        try {
-            domManager.displayFinaleStage();
-        } catch (err) {
-            console.error('Error initializing the DOM handler:', err);
+            console.error(`Error initializing the DOM handler for ${currentPage}:`, err);
         }
     }
 });

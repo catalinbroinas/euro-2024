@@ -246,6 +246,22 @@
    }
 }
 
+.btn-scroll
+{
+   position: fixed;
+   bottom: 5vh;
+   right: 5vw;
+   z-index: 99;
+   // display: none;
+   background-color: $primary-3;
+   color: $primary-2;
+}
+.btn-scroll:hover
+{
+   background-color: $primary-1;
+   color: $primary-2;
+}
+
 // Card
 .card-team {
    .card-image {

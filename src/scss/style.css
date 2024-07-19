@@ -18562,6 +18562,20 @@ fieldset:disabled .btn-group-vertical > .btn {
   margin-left: -14%;
 }
 
+.btn-scroll {
+  position: fixed;
+  bottom: 5vh;
+  right: 5vw;
+  z-index: 99;
+  background-color: #E3F2FD;
+  color: #2962FF;
+}
+
+.btn-scroll:hover {
+  background-color: #F5F5F5;
+  color: #2962FF;
+}
+
 .card-team .card-image {
   position: relative;
   z-index: 0;

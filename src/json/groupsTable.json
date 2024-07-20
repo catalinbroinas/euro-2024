@@ -17,9 +17,7 @@
       [
         { "class": "fw-bold", "text": "1." },
         {
-          "icon": [
-            { "class": ["flag", "flag-germany", "me-2"], "title": "Germany" }
-          ],
+          "icon": [{ "class": ["flag", "flag-germany"], "title": "Germany" }],
           "text": "Germany"
         },
         { "text": "3" },
@@ -36,7 +34,7 @@
         {
           "icon": [
             {
-              "class": ["flag", "flag-switzerland", "me-2"],
+              "class": ["flag", "flag-switzerland"],
               "title": "Switzerland"
             }
           ],
@@ -54,9 +52,7 @@
       [
         { "class": ["fw-bold"], "text": "3." },
         {
-          "icon": [
-            { "class": ["flag", "flag-hungary", "me-2"], "title": "Hungary" }
-          ],
+          "icon": [{ "class": ["flag", "flag-hungary"], "title": "Hungary" }],
           "text": "Hungary"
         },
         { "text": "3" },
@@ -71,9 +67,7 @@
       [
         { "class": ["fw-bold"], "text": "4." },
         {
-          "icon": [
-            { "class": ["flag", "flag-scotland", "me-2"], "title": "Scotland" }
-          ],
+          "icon": [{ "class": ["flag", "flag-scotland"], "title": "Scotland" }],
           "text": "Scotland"
         },
         { "text": "3" },
@@ -105,9 +99,7 @@
       [
         { "class": "fw-bold", "text": "1." },
         {
-          "icon": [
-            { "class": ["flag", "flag-spain", "me-2"], "title": "Spain" }
-          ],
+          "icon": [{ "class": ["flag", "flag-spain"], "title": "Spain" }],
           "text": "Spain"
         },
         { "text": "3" },
@@ -124,7 +116,7 @@
         {
           "icon": [
             {
-              "class": ["flag", "flag-italy", "me-2"],
+              "class": ["flag", "flag-italy"],
               "title": "Italy"
             }
           ],
@@ -142,9 +134,7 @@
       [
         { "class": ["fw-bold"], "text": "3." },
         {
-          "icon": [
-            { "class": ["flag", "flag-croatia", "me-2"], "title": "Croatia" }
-          ],
+          "icon": [{ "class": ["flag", "flag-croatia"], "title": "Croatia" }],
           "text": "Croatia"
         },
         { "text": "3" },
@@ -159,9 +149,7 @@
       [
         { "class": ["fw-bold"], "text": "4." },
         {
-          "icon": [
-            { "class": ["flag", "flag-albania", "me-2"], "title": "Albania" }
-          ],
+          "icon": [{ "class": ["flag", "flag-albania"], "title": "Albania" }],
           "text": "Albania"
         },
         { "text": "3" },
@@ -193,9 +181,7 @@
       [
         { "class": "fw-bold", "text": "1." },
         {
-          "icon": [
-            { "class": ["flag", "flag-england", "me-2"], "title": "England" }
-          ],
+          "icon": [{ "class": ["flag", "flag-england"], "title": "England" }],
           "text": "England"
         },
         { "text": "3" },
@@ -212,7 +198,7 @@
         {
           "icon": [
             {
-              "class": ["flag", "flag-denmark", "me-2"],
+              "class": ["flag", "flag-denmark"],
               "title": "Denmark"
             }
           ],
@@ -230,9 +216,7 @@
       [
         { "class": ["fw-bold"], "text": "3." },
         {
-          "icon": [
-            { "class": ["flag", "flag-slovenia", "me-2"], "title": "Slovenia" }
-          ],
+          "icon": [{ "class": ["flag", "flag-slovenia"], "title": "Slovenia" }],
           "text": "Slovenia"
         },
         { "text": "3" },
@@ -247,9 +231,7 @@
       [
         { "class": ["fw-bold"], "text": "4." },
         {
-          "icon": [
-            { "class": ["flag", "flag-serbia", "me-2"], "title": "Serbia" }
-          ],
+          "icon": [{ "class": ["flag", "flag-serbia"], "title": "Serbia" }],
           "text": "Serbia"
         },
         { "text": "3" },
@@ -281,9 +263,7 @@
       [
         { "class": "fw-bold", "text": "1." },
         {
-          "icon": [
-            { "class": ["flag", "flag-austria", "me-2"], "title": "Austria" }
-          ],
+          "icon": [{ "class": ["flag", "flag-austria"], "title": "Austria" }],
           "text": "Austria"
         },
         { "text": "3" },
@@ -300,7 +280,7 @@
         {
           "icon": [
             {
-              "class": ["flag", "flag-france", "me-2"],
+              "class": ["flag", "flag-france"],
               "title": "France"
             }
           ],
@@ -320,7 +300,7 @@
         {
           "icon": [
             {
-              "class": ["flag", "flag-netherlands", "me-2"],
+              "class": ["flag", "flag-netherlands"],
               "title": "Netherlands"
             }
           ],
@@ -338,9 +318,7 @@
       [
         { "class": ["fw-bold"], "text": "4." },
         {
-          "icon": [
-            { "class": ["flag", "flag-poland", "me-2"], "title": "Poland" }
-          ],
+          "icon": [{ "class": ["flag", "flag-poland"], "title": "Poland" }],
           "text": "Poland"
         },
         { "text": "3" },
@@ -372,9 +350,7 @@
       [
         { "class": "fw-bold", "text": "1." },
         {
-          "icon": [
-            { "class": ["flag", "flag-romania", "me-2"], "title": "Romania" }
-          ],
+          "icon": [{ "class": ["flag", "flag-romania"], "title": "Romania" }],
           "text": "Romania"
         },
         { "text": "3" },
@@ -391,7 +367,7 @@
         {
           "icon": [
             {
-              "class": ["flag", "flag-belgium", "me-2"],
+              "class": ["flag", "flag-belgium"],
               "title": "Belgium"
             }
           ],
@@ -409,9 +385,7 @@
       [
         { "class": ["fw-bold"], "text": "3." },
         {
-          "icon": [
-            { "class": ["flag", "flag-slovakia", "me-2"], "title": "Slovakia" }
-          ],
+          "icon": [{ "class": ["flag", "flag-slovakia"], "title": "Slovakia" }],
           "text": "Slovakia"
         },
         { "text": "3" },
@@ -426,9 +400,7 @@
       [
         { "class": ["fw-bold"], "text": "4." },
         {
-          "icon": [
-            { "class": ["flag", "flag-ukraine", "me-2"], "title": "Ukraine" }
-          ],
+          "icon": [{ "class": ["flag", "flag-ukraine"], "title": "Ukraine" }],
           "text": "Ukraine"
         },
         { "text": "3" },
@@ -460,9 +432,7 @@
       [
         { "class": "fw-bold", "text": "1." },
         {
-          "icon": [
-            { "class": ["flag", "flag-portugal", "me-2"], "title": "Portugal" }
-          ],
+          "icon": [{ "class": ["flag", "flag-portugal"], "title": "Portugal" }],
           "text": "Portugal"
         },
         { "text": "3" },
@@ -479,7 +449,7 @@
         {
           "icon": [
             {
-              "class": ["flag", "flag-turkey", "me-2"],
+              "class": ["flag", "flag-turkey"],
               "title": "Turkey"
             }
           ],
@@ -497,9 +467,7 @@
       [
         { "class": ["fw-bold"], "text": "3." },
         {
-          "icon": [
-            { "class": ["flag", "flag-georgia", "me-2"], "title": "Georgia" }
-          ],
+          "icon": [{ "class": ["flag", "flag-georgia"], "title": "Georgia" }],
           "text": "Georgia"
         },
         { "text": "3" },
@@ -516,7 +484,7 @@
         {
           "icon": [
             {
-              "class": ["flag", "flag-czech-republic", "me-2"],
+              "class": ["flag", "flag-czech-republic"],
               "title": "Czech Republic"
             }
           ],

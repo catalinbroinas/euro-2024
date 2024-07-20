@@ -88,6 +88,10 @@ function GroupDomHandler() {
 
                 if (cell.icon) {
                     cell.icon.forEach(icon => {
+                        const iconElementWrapper = utilityDom.createDOMElement({
+                            elementTag: 'span',
+                            elementClass: ['flag-country', 'me-2']
+                        });
                         const iconElement = utilityDom.createDOMElement({
                             elementTag: 'i',
                             elementClass: icon.class ? icon.class : [],
@@ -95,7 +99,8 @@ function GroupDomHandler() {
                                 title: icon.title
                             }
                         });
-                        td.appendChild(iconElement);
+                        iconElementWrapper.appendChild(iconElement);
+                        td.appendChild(iconElementWrapper);
                     });
                 }
 
@@ -127,7 +132,7 @@ function GroupDomHandler() {
         // Create card structure
         const cardWrapper = utilityDom.createDOMElement({
             elementTag: 'div',
-            elementClass: ['col-xxl-6', 'col-lg-4', 'col-sm-10']
+            elementClass: ['col-ultra-4', 'col-xxl-6', 'col-lg-4', 'col-sm-6', 'col-10']
         });
         const card = utilityDom.createDOMElement({
             elementTag: 'div',

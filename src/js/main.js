@@ -89,7 +89,7 @@ async function HandlePageContent() {
                 // Create column for group results
                 const resultsWrapper = utilityDom.createDOMElement({
                     elementTag: 'div',
-                    elementClass: ['col-ultra-5', 'col-xxxl-6', 'col-xxl-5', 'col-sm-12', 'my-0'],
+                    elementClass: ['col-xxxl-6', 'col-xxl-5', 'col-sm-12', 'my-0'],
                     elementId: `group-${groupLetter}-results`
                 });
 

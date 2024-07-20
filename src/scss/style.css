@@ -18617,6 +18617,24 @@ fieldset:disabled .btn-group-vertical > .btn {
   }
 }
 @media only screen and (max-width: 575px) {
+  .intro .title {
+    font-size: 2rem;
+  }
+  .intro .icon-intro {
+    font-size: 2.5rem;
+  }
+  .intro-teams .title,
+  .intro-stadiums .title,
+  .intro-groups .title,
+  .intro-finale-stage .title {
+    font-size: 2rem;
+  }
+  .intro-teams .sub-title,
+  .intro-stadiums .sub-title,
+  .intro-groups .sub-title,
+  .intro-finale-stage .sub-title {
+    font-size: 1.5rem;
+  }
   .stadium-wrapper .stadium-wrapper-content {
     margin-left: 0;
   }

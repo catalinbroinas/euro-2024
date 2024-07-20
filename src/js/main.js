@@ -136,7 +136,10 @@ async function HandlePageContent() {
                 // Create container for all finale stage rounds
                 const stageWrapper = utilityDom.createDOMElement({
                     elementTag: 'div',
-                    elementClass: ['row', 'row-cols-1', 'row-cols-sm-2', 'row-cols-lg-3', 'row-cols-xxl-4', 'gy-4', 'gx-5', 'mb-xl-7', 'mb-5'],
+                    elementClass: [
+                        'row', 'row-cols-1', 'row-cols-sm-2', 'row-cols-lg-3', 'row-cols-xxl-4', 'row-cols-ultra-5',
+                        'gy-4', 'gx-xxl-5', 'gx-xl-4', 'gx-3', 'mb-xl-7', 'mb-5'
+                    ],
                     elementId: stageId
                 });
 

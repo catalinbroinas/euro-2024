@@ -1,7 +1,7 @@
 async function TeamDataFetcher() {
     const getTeams = async () => {
         try {
-            const response = await fetch('../json/teams.json', { mode: 'cors' });
+            const response = await fetch('../euro-2024/json/teams.json', { mode: 'cors' });
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }

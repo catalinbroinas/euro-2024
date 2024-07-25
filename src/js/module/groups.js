@@ -18,12 +18,12 @@ async function fetchData(url, errorMessage) {
 }
 
 async function TableDataFetcher() {
-    const getTable = () => fetchData('../src/json/groupsTable.json', 'Groups table data response was not ok.');
+    const getTable = () => fetchData('../euro-2024/src/json/groupsTable.json', 'Groups table data response was not ok.');
     return { getTable };
 }
 
 async function MatchesDataFetcher() {
-    const getResults = () => fetchData('../src/json/groupsResults.json', 'Groups results data response was not ok.');
+    const getResults = () => fetchData('../euro-2024/src/json/groupsResults.json', 'Groups results data response was not ok.');
     return { getResults };
 };
 

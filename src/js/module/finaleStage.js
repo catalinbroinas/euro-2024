@@ -3,7 +3,7 @@ import { UtilityDomHandler } from "./utility.js";
 async function FinaleStageDataFetcher() {
     const getResults = async () => {
         try {
-            const response = await fetch('../src/json/finaleStage.json', { mode: 'cors' });
+            const response = await fetch('../euro-2024/src/json/finaleStage.json', { mode: 'cors' });
             if (!response.ok) {
                 throw new Error('Finale stage data response was not ok.');
             }

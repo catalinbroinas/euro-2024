@@ -3,7 +3,7 @@ import { UtilityDomHandler } from "./utility.js";
 async function StadiumDataFetcher() {
     const getStadiums = async () => {
         try {
-            const response = await fetch('../src/json/stadiums.json', { mode: 'cors' });
+            const response = await fetch('../euro-2024/src/json/stadiums.json', { mode: 'cors' });
             if (!response.ok) {
                 throw new Error('Stadiums data response was not ok.');
             }

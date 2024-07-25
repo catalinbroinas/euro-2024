@@ -18423,7 +18423,7 @@ fieldset:disabled .btn-group-vertical > .btn {
 }
 
 .intro {
-  background-image: url("/img/stadiums/olympiaStadion_1.jpg");
+  background-image: url("../../img/stadiums/olympiaStadion_1.jpg");
   display: flex;
   height: 40vh;
   background-position: center;

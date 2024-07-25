@@ -3,6 +3,11 @@
   "version": "6.4.1",
   "homepage": "https://mdbootstrap.com/docs/standard/",
   "license": "MIT",
+  "private": "true",
+  "type": "module",
+  "scripts": {
+    "start": "http-server"
+  },
   "dependencies": {
     "http-server": "^14.1.1"
   }

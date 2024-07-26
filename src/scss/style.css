@@ -18477,7 +18477,7 @@ fieldset:disabled .btn-group-vertical > .btn {
 }
 
 .intro-teams {
-  background-image: url("/img/cover/grass.jpg");
+  background-image: url("../../img/cover/grass.jpg");
   background-position: center;
 }
 .intro-teams .title {
@@ -18490,7 +18490,7 @@ fieldset:disabled .btn-group-vertical > .btn {
 }
 
 .intro-stadiums {
-  background-image: url("/img/stadiums/olympiaStadion.jpg");
+  background-image: url("../../img/stadiums/olympiaStadion.jpg");
   background-position: bottom;
 }
 .intro-stadiums .title {
@@ -18513,11 +18513,11 @@ fieldset:disabled .btn-group-vertical > .btn {
 }
 
 .intro-groups {
-  background-image: url("/img/cover/bridge.jpg");
+  background-image: url("../../img/cover/bridge.jpg");
 }
 
 .intro-finale-stage {
-  background-image: url("/img/cover/water.jpg");
+  background-image: url("../../img/cover/water.jpg");
 }
 
 #finale-stage-results .card-body {

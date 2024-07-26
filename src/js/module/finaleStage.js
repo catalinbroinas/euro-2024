@@ -99,7 +99,7 @@ function FinaleStageDomHandler() {
             elementTag: 'img',
             elementClass: ['me-4', 'avatar-team'],
             elementAttributes: {
-                src: `/img/flags/${awayFlag}`,
+                src: `img/flags/${awayFlag}`,
                 alt: `${awayTeam} flag`
             }
         });

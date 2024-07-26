@@ -66,7 +66,7 @@ function FinaleStageDomHandler() {
             elementTag: 'img',
             elementClass: ['me-4', 'avatar-team'],
             elementAttributes: {
-                src: `/img/flags/${homeFlag}`,
+                src: `img/flags/${homeFlag}`,
                 alt: `${homeTeam} flag`
             }
         });

@@ -76,7 +76,7 @@ function StadiumDomHandler() {
         const imageElement = utilityDom.createDOMElement({
             elementTag: 'img',
             elementAttributes: {
-                src: `/img/stadiums/${image}`,
+                src: `img/stadiums/${image}`,
                 alt: `${name} stadium`
             },
             elementClass: ['img-fluid', 'rounded-7', 'shadow-0']

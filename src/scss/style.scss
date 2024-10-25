@@ -144,16 +144,26 @@
 }
 
 .intro-body {
-   .text-container {
-      @include background-light;
-   }
+   background-color: $secondary-2;
+   position: relative;
+   z-index: 3;
+   margin-top: -10rem;
+
    .title {
+      @include title;
       text-transform: capitalize;
+      font-weight: 700;
    }
+
+   .sub-title {
+      @include sub-title;
+      font-weight: 600;
+      font-family: $font-text;
+      color: $primary-2;
+   }
+
    .text {
-      font-size: 1.25rem;
-      line-height: 2rem;
-      font-family: "Roboto", Arial, Helvetica, sans-serif;
+      @include text;
    }
 }
 

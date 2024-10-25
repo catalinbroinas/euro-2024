@@ -18314,6 +18314,10 @@ fieldset:disabled .btn-group-vertical > .btn {
   color: #332D2D;
 }
 
+.text-blue {
+  color: #2962FF;
+}
+
 .navbar {
   background-color: transparent;
   margin: 0;

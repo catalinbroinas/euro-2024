@@ -16,6 +16,10 @@
    @include text;
 }
 
+.text-blue {
+   color: $primary-2;
+}
+
 // Navbar
 .navbar {
    background-color: transparent;

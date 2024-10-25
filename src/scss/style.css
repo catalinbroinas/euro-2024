@@ -18315,13 +18315,15 @@ fieldset:disabled .btn-group-vertical > .btn {
 }
 
 .navbar {
-  background-color: #F5F5F5;
+  background-color: transparent;
   margin: 0;
   padding: 0.75rem 2rem 0;
+  z-index: 3;
 }
 .navbar .navbar-toggler {
   margin: 0;
   padding: 0.75rem 0;
+  color: white;
 }
 .navbar .navbar-brand {
   position: relative;
@@ -18335,7 +18337,7 @@ fieldset:disabled .btn-group-vertical > .btn {
   height: 4px;
   left: 50%;
   bottom: 0;
-  background-color: #2962FF;
+  background-color: white;
   transition: all ease-in-out 0.2s;
 }
 .navbar .navbar-brand:hover::after {
@@ -18350,6 +18352,7 @@ fieldset:disabled .btn-group-vertical > .btn {
   font-family: Arial, "Roboto", Verdana, sans-serif;
   font-weight: 700;
   color: #332D2D;
+  color: white;
 }
 .navbar .navbar-nav {
   margin: 0;
@@ -18368,6 +18371,7 @@ fieldset:disabled .btn-group-vertical > .btn {
   font-family: "Roboto", Arial, Verdana, sans-serif;
   font-weight: 400;
   color: #332D2D;
+  color: white;
 }
 .navbar .nav-link::after {
   content: "";
@@ -18376,7 +18380,7 @@ fieldset:disabled .btn-group-vertical > .btn {
   height: 4px;
   left: 50%;
   bottom: 0;
-  background-color: #2962FF;
+  background-color: white;
   transition: all ease-in-out 0.2s;
 }
 .navbar .nav-link:hover::after {
@@ -18385,10 +18389,12 @@ fieldset:disabled .btn-group-vertical > .btn {
 }
 @media screen and (max-width: 991px) {
   .navbar {
+    background-color: #F5F5F5;
     padding: 1.5rem 2rem;
   }
   .navbar .navbar-toggler {
     padding: 0;
+    color: #332D2D;
   }
   .navbar .navbar-brand {
     margin-top: 1.5rem;
@@ -18398,6 +18404,16 @@ fieldset:disabled .btn-group-vertical > .btn {
   .navbar .navbar-brand:hover {
     background-color: #2962FF;
     color: white;
+  }
+  .navbar .navbar-brand::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 4px;
+    left: 50%;
+    bottom: 0;
+    background-color: #2962FF;
+    transition: all ease-in-out 0.2s;
   }
   .navbar .navbar-nav {
     margin-bottom: 1.5rem;
@@ -18411,10 +18427,21 @@ fieldset:disabled .btn-group-vertical > .btn {
     padding: 0.75rem 0;
     transition: all 0.5s 0.3s;
     text-align: center;
+    color: #332D2D;
   }
   .navbar .nav-link:hover {
     background-color: #2962FF;
     color: white;
+  }
+  .navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 4px;
+    left: 50%;
+    bottom: 0;
+    background-color: #2962FF;
+    transition: all ease-in-out 0.2s;
   }
 }
 
@@ -18428,6 +18455,7 @@ fieldset:disabled .btn-group-vertical > .btn {
   height: 40vh;
   background-position: center;
   z-index: 2;
+  margin-top: -72px;
 }
 .intro .title {
   color: #2962FF;
@@ -18459,11 +18487,12 @@ fieldset:disabled .btn-group-vertical > .btn {
 .intro-stadiums,
 .intro-groups,
 .intro-finale-stage {
-  height: 30vh;
+  height: 40vh;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   z-index: 2;
+  margin-top: -72px;
 }
 .intro-teams .title, .intro-teams .sub-title,
 .intro-stadiums .title,

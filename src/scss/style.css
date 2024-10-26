@@ -18450,7 +18450,10 @@ fieldset:disabled .btn-group-vertical > .btn {
 }
 
 .footer {
-  background-color: #F5F5F5;
+  background-color: #E3F2FD;
+}
+.footer .details {
+  background-color: #BBDEFB;
 }
 
 .intro {
@@ -18648,6 +18651,11 @@ fieldset:disabled .btn-group-vertical > .btn {
 .table-group {
   background-color: white;
   padding: 2rem 3rem;
+}
+
+.technology-avatar {
+  max-width: 3.5rem;
+  height: auto;
 }
 
 .mask-dark {

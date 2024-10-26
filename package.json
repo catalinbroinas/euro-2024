@@ -1,9 +1,17 @@
 {
+<<<<<<< HEAD
   "name": "mdb-standard-app",
   "version": "6.4.1",
   "homepage": "https://mdbootstrap.com/docs/standard/",
   "license": "MIT",
   "private": "true",
+=======
+  "name": "uefa-euro-2024",
+  "version": "1.0.0",
+  "license": "ISC",
+  "main": "src/js/main.js",
+  "private": true,
+>>>>>>> design
   "type": "module",
   "scripts": {
     "start": "http-server"

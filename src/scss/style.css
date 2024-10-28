@@ -18644,6 +18644,10 @@ fieldset:disabled .btn-group-vertical > .btn {
   color: #2962FF;
 }
 
+.btn.btn-primary.btn-custom {
+  background-color: #2962FF;
+}
+
 .card-team .card-image {
   position: relative;
   z-index: 0;
